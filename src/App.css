@@ -1,9 +1,13 @@
+/* App.css */
 body {
   margin: 0;
   overflow-x: hidden;
   background: linear-gradient(to right, var(--from-aquamarine), var(--via-soft-aqua), var(--to-aquamarine));
-  min-height: 100vh;
-  width: 100%;
+  min-height: 100vh; /* Ensure it covers the entire viewport height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Adjust this if needed */
 }
 
 /* Variables for reusability */
