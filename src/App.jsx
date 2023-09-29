@@ -9,8 +9,6 @@ import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Title from './components/Title';  // <- Import the new Title component
 
-import purpleStar from './images/purple-star.jpg';
-
 function App() {
   const [isVisible, setIsVisible] = useState(true);
 
@@ -18,7 +16,7 @@ function App() {
     const options = {
       root: null,
       rootMargin: '0px',
-      threshold: 0.5, // visibility threshold
+      threshold: 0.5,
     };
 
     const observer = new IntersectionObserver((entries, observer) => {
@@ -44,15 +42,13 @@ function App() {
 
   return (
     <div className='bg-gradient-to-r from-aquamarine via-soft-aqua to-aquamarine min-h-screen px-4 md:px-8 lg:px-16'>
-      <Nav /> {/* Include the Nav component */}
-      <Title /> {/* Include the Title component */}
-      {/* Add the rest of your components and JSX code below */}
+      <Nav />
+      <Title />
       <About />
       <Currents />
       <Contact />
       <Projects />
       <Skills />
-      {/* You can continue with the rest of your code/components here... */}
     </div>
   );
 }
