@@ -1,6 +1,5 @@
 import React from "react";
 import 'font-awesome/css/font-awesome.min.css';
-import 'font-awesome/css/font-awesome.min.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import pinkBearIcon from '../images/pink-bear.jpg';
 import ipodIcon from '../images/ipod-icon.jpg';
@@ -16,7 +15,6 @@ export default function Currents() {
             height: '100vh',
             paddingLeft: '10%',
             paddingRight: '10%',
-            
         },
         header: {
             display: 'flex',
@@ -114,7 +112,6 @@ export default function Currents() {
             }
         }
     };
-    
 
     return (
         <div id="currents" style={styles.container}>

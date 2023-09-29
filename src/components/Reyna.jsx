@@ -9,7 +9,6 @@ const styles = {
         justifyContent: 'center',
         height: '100vh',
         textAlign: 'center',
-       
     },
     heartContainer: {
         display: 'flex',

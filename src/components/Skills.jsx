@@ -11,7 +11,6 @@ export default function Skills() {
             height: '100vh',
             paddingLeft: '10%',
             paddingRight: '10%',
-            
         },
         header: {
             display: 'flex',
@@ -65,35 +64,35 @@ export default function Skills() {
     };
 
     return (
-      <div id="skills" style={styles.container}>
-          <div style={styles.header}>
-              <h1 style={styles.h1}>SKILLS</h1>
-              <img src={flyingPowerpuff} alt="powerpuff girl" style={styles.image} />
-          </div>
+        <div id="skills" style={styles.container}>
+            <div style={styles.header}>
+                <h1 style={styles.h1}>SKILLS</h1>
+                <img src={flyingPowerpuff} alt="powerpuff girl" style={styles.image} />
+            </div>
 
-          <section style={styles.section}>
-              <h2 style={styles.h2}>LANGUAGES:</h2>
-              <ul style={{ ...styles.ul, fontSize: '13px' }}> {/* Adjusted font size */}
-                  <li>python, C#, C++, javascript, kotlin</li>
-              </ul>
-          </section>
+            <section style={styles.section}>
+                <h2 style={styles.h2}>LANGUAGES:</h2>
+                <ul style={{ ...styles.ul, fontSize: '13px' }}> {/* Adjusted font size */}
+                    <li>python, C#, C++, javascript, kotlin</li>
+                </ul>
+            </section>
 
-          <section style={styles.section}>
-              <h2 style={styles.h2}>IDEs:</h2>
-              <ul style={{ ...styles.ul, fontSize: '13.6px' }}> {/* Adjusted font size */}
-                  <li>visual studio code, pycharm,</li>
-                  <li>jupyter notebook, replit,</li>
-                  <li>ubuntu, deepnote, android studio</li>
-              </ul>
-          </section>
+            <section style={styles.section}>
+                <h2 style={styles.h2}>IDEs:</h2>
+                <ul style={{ ...styles.ul, fontSize: '13.6px' }}> {/* Adjusted font size */}
+                    <li>visual studio code, pycharm,</li>
+                    <li>jupyter notebook, replit,</li>
+                    <li>ubuntu, deepnote, android studio</li>
+                </ul>
+            </section>
 
-          <section style={styles.section}>
-              <h2 style={styles.h2}>CERTIFICATES:</h2>
-              <ul style={{ ...styles.ul, fontSize: '11.1px' }}> {/* Adjusted font size */}
-                  <li>machine learning foundations - eCornell</li>
-                  <li>foundational c# - microsoft</li>
-              </ul>
-          </section>
-      </div>
-  );
+            <section style={styles.section}>
+                <h2 style={styles.h2}>CERTIFICATES:</h2>
+                <ul style={{ ...styles.ul, fontSize: '11.1px' }}> {/* Adjusted font size */}
+                    <li>machine learning foundations - eCornell</li>
+                    <li>foundational c# - microsoft</li>
+                </ul>
+            </section>
+        </div>
+    );
 }

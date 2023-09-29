@@ -10,7 +10,6 @@ const styles = {
     alignItems: 'center',
     justifyContent: 'center',
     height: '100vh',
-    
   },
   header: {
     display: 'flex',
@@ -55,16 +54,15 @@ const styles = {
   },
   '@media (max-width: 768px)': {
     contactLink: {
-        marginBottom: '15px'
+      marginBottom: '15px'
     },
     contactText: {
-        fontSize: '10px'
+      fontSize: '10px'
     },
     phoneIcon: {
-        width: '35px'
+      width: '35px'
     }
-}
-  
+  }
 };
 
 export default function Contact() {
@@ -114,8 +112,7 @@ export default function Contact() {
 
         <div style={contactLinkStyle}>
           <a href="https://github.com/reyna-okamune" target="_blank" rel="noopener noreferrer">
-          <i className="fab fa-github icon-glow" style={{ ...iconStyle, color: 'white' }}></i>
-
+            <i className="fab fa-github icon-glow" style={{ ...iconStyle, color: 'white' }}></i>
             <span style={textStyle}>@reyna-okamune</span>
           </a>
         </div>

@@ -46,9 +46,8 @@ function App() {
   return (
     <div className='bg-gradient-to-r from-aquamarine via-soft-aqua to-aquamarine min-h-screen px-4 md:px-8 lg:px-16'>
       <Nav />
-      
-      <div className="flex flex-col items-center p-4">
-        {/* Remove unnecessary white spaces */}
+
+      <div className="container mx-auto flex flex-col items-center p-4">
         <Reyna />
         <About />
         <Currents />
