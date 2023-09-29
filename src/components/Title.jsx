@@ -7,7 +7,7 @@ const styles = {
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
-        height: '100vh',
+        height: 'auto'
     },
     header: {
         display: 'flex',
@@ -16,11 +16,11 @@ const styles = {
         textAlign: 'center'
     },
     imageHeart: {
-        width: '10%',
+        width: '10vw',
         height: 'auto'
     },
     flippedImageHeart: {
-        width: '10%',
+        width: '10vw',
         height: 'auto',
         transform: 'scaleX(-1)'
     },
@@ -42,10 +42,9 @@ const styles = {
     }
 };
 
-
 export default function Title() {
     return (
-        <div id="title"style={styles.container}>
+        <div id="title" style={styles.container}>
             <div style={styles.header}>
                 <img src={heart} alt="heart" style={styles.imageHeart} />
                 <h1 style={styles.h1}>REYNA AGUIRRE OKAMUNE</h1>
