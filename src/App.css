@@ -1,66 +1,14 @@
-
-* {
+body {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  overflow-x: hidden;
+  background: linear-gradient(to right, var(--from-aquamarine), var(--via-soft-aqua), var(--to-aquamarine));
 }
-
 /* Variables for reusability */
 :root {
   --from-aquamarine: #00d1dc;
   --via-soft-aqua: #9efffd;
   --to-aquamarine: #00d1dc;
 }
-
-/* Set base styles for html and body */
-html, body, .min-h-screen {
-  height: 100%;
-  min-height: 100vh;
-}
-
-body {
-  margin: 0;
-  overflow-x: hidden;
-  background: linear-gradient(to right, var(--from-aquamarine), var(--via-soft-aqua), var(--to-aquamarine));
-}
-
-/* Mobile navigation styles */
-.nav-mobile {
-  display: none;
-  flex-direction: column;
-  position: absolute;
-  top: 60px;
-  right: 30px;
-  
-  border-radius: 8px;
-}
-
-.nav-mobile a {
-  padding: 10px 20px;
-  text-decoration: none;
-  color: white;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.nav-mobile a:last-child {
-  border-bottom: none;
-}
-
-@media (max-width: 768px) {
-  .nav-mobile.active {
-    display: flex;
-    font-size: 14px;
-    position: fixed;      /* Make it a fixed element */
-    top: 0;               /* Start from the top edge of the viewport */
-    left: 0;              /* Start from the left edge of the viewport */
-    width: 100vw;         /* Take up the full viewport width */
-    height: 100vh;        /* Take up the full viewport height */
-    background: linear-gradient(to right, var(--from-aquamarine), var(--via-soft-aqua), var(--to-aquamarine)); /* Gradient background */
-    z-index: 1000;        /* Optional: Place it on top of other content */
-  }
-}
-
-
 
 @font-face {
   font-family: 'Excelorate';
@@ -189,4 +137,3 @@ body {
   background-position: center center, center center;
   background-size: cover, cover;
 }
-
