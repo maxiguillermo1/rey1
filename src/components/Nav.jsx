@@ -24,7 +24,7 @@ export default function Nav() {
   return (
     <nav style={navStyles} className="flex justify-center items-center p-10">
       <ul className="flex space-x-10">
-        <li><Link to="about" smooth={true} className="nav-link">ABOUT ME</Link></li>
+        <li><Link to="aboutMe" smooth={true} className="nav-link">ABOUT ME</Link></li>
         <li><Link to="currents" smooth={true} className="nav-link">CURRENT FAVORITES</Link></li>
         <li><Link to="skills" smooth={true} className="nav-link">SKILLS</Link></li>
         <li><Link to="contact" smooth={true} className="nav-link">CONTACT</Link></li>

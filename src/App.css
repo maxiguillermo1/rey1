@@ -4,6 +4,8 @@ body, html {
   margin: 0;
   padding: 0;
   height: 100%;
+  background: linear-gradient(to right, #a1ffff, #9efffd, #00d1dc); /* Updated gradient colors */
+  background: linear-gradient(to left, #a1ffff, #9efffd, #00d1dc); /* Updated gradient colors */
   font-family: Arial, sans-serif; /* Adjust the font family as needed */
 }
 
@@ -15,6 +17,7 @@ body.bg-gradient-to-r {
   justify-content: center; /* Center the content horizontally */
   align-items: center; /* Center the content vertically */
 }
+
 
 
 /* Adjust padding for larger screens */

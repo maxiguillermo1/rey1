@@ -60,7 +60,7 @@ const styles = {
 
 export default function Reyna() {
     return (
-        <div style={styles.container}>
+        <div id="reyna" style={styles.container}>
             <div style={styles.heartContainer}>
                 <img src={heart} alt="heart" style={styles.imageStyle} />
                 <h1 style={styles.h1}>REYNA AGUIRRE OKAMUNE</h1>
