@@ -13,6 +13,18 @@ body, html {
   background: linear-gradient(to right, from-aquamarine, via-soft-aqua, to-aquamarine);
 }
 
+container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Use min-height instead of height */
+  width: 100%; /* Add width: 100% to ensure it spans the entire viewport width */
+  padding-left: 10%;
+  padding-right: 10%;
+  box-sizing: border-box; /* Include this to account for padding within the width */
+  overflow-x: hidden; /* If necessary to prevent horizontal scrolling */
+}
 
 @font-face {
   font-family: 'Excelorate';
