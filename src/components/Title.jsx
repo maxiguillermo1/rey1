@@ -40,7 +40,10 @@ const styles = {
         fontSize: '13px',
         color: 'white',
         textShadow: '2px 2px 2px rgba(255,33,156,0.7), -2px -2px 2px rgba(255,33,156,0.7), 2px -2px 2px rgba(255,33,156,0.7), -2px 2px 2px rgba(255,33,156,0.7)',
-        paddingTop: '10px'
+        textAlign: 'center',
+        paddingTop: '10px',
+        paddingLeft: '45px',
+        paddingRight: '45px'
     }
 };
 
