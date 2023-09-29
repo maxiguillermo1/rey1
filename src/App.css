@@ -2,7 +2,7 @@
 /* App.css */
 body {
   margin: 0;
-  overflow: hidden; /* Prevent scrolling */
+  
   background: linear-gradient(to right, var(--from-aquamarine), var(--via-soft-aqua), var(--to-aquamarine));
   min-height: 100vh; /* Ensure it covers the entire viewport height */
   min-width: 100vw; /* Ensure it covers the entire viewport width */
