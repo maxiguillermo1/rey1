@@ -1,10 +1,15 @@
-@media (max-width: 768px) {
-  h1 {
-      font-size: 20px; /* Adjust based on your design */
-  }
-
-  /* Add other selectors and properties here. */
+/* Define a background gradient for mobile screens */
+.bg-gradient-mobile {
+  background: linear-gradient(to bottom, from-aquamarine, via-soft-aqua, to-aquamarine);
 }
+
+/* Apply the mobile background gradient for screens with a maximum width of 768px (adjust as needed) */
+@media (max-width: 768px) {
+  .bg-gradient-mobile {
+    background: linear-gradient(to right, from-aquamarine, via-soft-aqua, to-aquamarine);
+  }
+}
+
 
 @font-face {
   font-family: 'Excelorate';

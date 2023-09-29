@@ -12,6 +12,21 @@ import Skills from './components/Skills';
 import purpleStar from './images/purple-star.jpg';
 import heart from './images/heart-title.jpg';
 
+// Define your mobile styles
+const mobileStyles = {
+  // Adjust font sizes
+  fontSize: '20px',
+
+  // Reduce padding and margins
+  padding: '10px',
+  margin: '5px',
+
+  // Adjust image size
+  width: '20%',
+  height: 'auto',
+
+  // Any other mobile-specific styles
+};
 function App() {
   const [isVisible, setIsVisible] = useState(true);
 
@@ -44,7 +59,9 @@ function App() {
   }, []);
 
   return (
-    <div className='bg-gradient-to-r from-aquamarine via-soft-aqua to-aquamarine min-h-screen px-4 md:px-8 lg:px-16'>
+    
+    <div className='bg-gradient-to-r from-aquamarine via-soft-aqua to-aquamarine min-h-screen px-4 md:px-8 lg:px-16 bg-gradient-mobile'>
+
       <Nav /> {/* Include the Nav component */}
       
       <div className="flex flex-col items-center p-4">
