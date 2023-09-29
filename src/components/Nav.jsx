@@ -4,7 +4,7 @@ import { Link } from 'react-scroll';
 const navStyles = {
   position: 'sticky',
   top: 0,
-  zIndex: 1000,
+
   fontFamily: 'Protomo, sans-serif',
   fontSize: '23px',
   color: 'white',

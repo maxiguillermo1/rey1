@@ -6,6 +6,14 @@
   /* Add other selectors and properties here. */
 }
 
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: linear-gradient(to right, from-aquamarine, via-soft-aqua, to-aquamarine);
+}
+
+
 @font-face {
   font-family: 'Excelorate';
   src: local('Excelorate-font'),

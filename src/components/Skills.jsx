@@ -11,7 +11,7 @@ export default function Skills() {
             height: '100vh',
             paddingLeft: '10%',
             paddingRight: '10%',
-            overflowX: 'hidden'  // This prevents horizontal scrolling which can cause white bars.
+            
         },
         header: {
             display: 'flex',

@@ -10,7 +10,7 @@ const styles = {
     alignItems: 'center',
     justifyContent: 'center',
     height: '100vh',
-    overflowX: 'hidden' // Prevents any potential horizontal scrolling
+    
   },
   header: {
     display: 'flex',

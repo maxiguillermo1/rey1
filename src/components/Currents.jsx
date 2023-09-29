@@ -16,7 +16,7 @@ export default function Currents() {
             height: '100vh',
             paddingLeft: '10%',
             paddingRight: '10%',
-            overflowX: 'hidden' // Prevents any potential horizontal scrolling
+            
         },
         header: {
             display: 'flex',
