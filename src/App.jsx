@@ -11,35 +11,7 @@ import purpleStar from './images/purple-star.jpg';
 import heart from './images/heart-title.jpg';
 
 function App() {
-  const [isVisible, setIsVisible] = useState(true);
-
-  useEffect(() => {
-    const options = {
-      root: null,
-      rootMargin: '0px',
-      threshold: 0.5, // visibility threshold
-    };
-
-    const observer = new IntersectionObserver((entries, observer) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-          observer.unobserve(entry.target);
-        }
-      });
-    }, options);
-
-    const target = document.querySelector('#aboutMe');
-    if (target) {
-      observer.observe(target);
-    }
-
-    return () => {
-      if (target) {
-        observer.unobserve(target);
-      }
-    };
-  }, []);
+ 
 
   return (
     <div className="app-container">

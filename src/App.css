@@ -4,28 +4,8 @@ body, html {
   margin: 0;
   padding: 0;
   height: 100%;
-  background: linear-gradient(to right, #a1ffff, #9efffd, #00d1dc); /* Keep this */
-  font-family: Arial, sans-serif;
-}
-
-
-/* Apply the background gradient using the class directly to the body element */
-body.bg-gradient-to-r {
   background: linear-gradient(to right, #a1ffff, #9efffd, #00d1dc);
-  min-height: 100vh;
-  display: flex;
-  justify-content: center; /* Center the content horizontally */
-  align-items: center; /* Center the content vertically */
-}
-
-
-
-/* Adjust padding for larger screens */
-@media (min-width: 768px) {
-  .bg-gradient-to-r {
-    padding-left: 8rem;
-    padding-right: 16rem;
-  }
+  font-family: Arial, sans-serif;
 }
 
 /* Common styles for container elements */
@@ -34,12 +14,12 @@ body.bg-gradient-to-r {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh; /* Use min-height instead of height */
-  width: 100%; /* Add width: 100% to ensure it spans the entire viewport width */
+  min-height: 100vh;
+  width: 100%;
   padding-left: 10%;
   padding-right: 10%;
-  box-sizing: border-box; /* Include this to account for padding within the width */
-  overflow-x: hidden; /* If necessary to prevent horizontal scrolling */
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 /* Fonts */
 @font-face {
@@ -172,4 +152,13 @@ body.bg-gradient-to-r {
   background-repeat: repeat, no-repeat; 
   background-position: center center, center center;
   background-size: cover, cover;
+}
+
+
+/* Adjust padding for larger screens */
+@media (min-width: 768px) {
+  .container {
+    padding-left: 8rem;
+    padding-right: 16rem;
+  }
 }
