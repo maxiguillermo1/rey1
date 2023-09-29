@@ -43,10 +43,12 @@ function App() {
   }, []);
 
   return (
-    <div className='min-h-screen px-4 md:px-8 lg:px-16'>
+    <div className='min-h-screen w-full'>
+
       <Nav />
       
-      <div className="flex flex-col items-center p-4">
+      <div className="flex flex-col items-center justify-center w-full p-4">
+
         
       
         <Element name="Reyna Aguirre Okamune" style={{ opacity: isVisible ? 1 : 0, width: '100%',  }}>
