@@ -8,7 +8,8 @@ const styles = {
         alignItems: 'center',
         justifyContent: 'center',
         height: '100vh',
-        textAlign: 'center'
+        textAlign: 'center',
+        overflowX: 'hidden'  // This prevents horizontal scrolling which can cause white bars.
     },
     heartContainer: {
         display: 'flex',

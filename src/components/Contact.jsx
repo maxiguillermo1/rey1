@@ -9,7 +9,8 @@ const styles = {
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
-    height: '100vh'
+    height: '100vh',
+    overflowX: 'hidden' // Prevents any potential horizontal scrolling
   },
   header: {
     display: 'flex',
@@ -51,7 +52,19 @@ const styles = {
       -2px -2px 2px rgba(190, 78, 255, 0.8), 
       2px -2px 2px rgba(190, 78, 255, 0.8), 
       -2px 2px 2px rgba(190, 78, 255, 0.8)`
-  }
+  },
+  '@media (max-width: 768px)': {
+    contactLink: {
+        marginBottom: '15px'
+    },
+    contactText: {
+        fontSize: '10px'
+    },
+    phoneIcon: {
+        width: '35px'
+    }
+}
+  
 };
 
 export default function Contact() {

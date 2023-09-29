@@ -16,6 +16,7 @@ export default function Currents() {
             height: '100vh',
             paddingLeft: '10%',
             paddingRight: '10%',
+            overflowX: 'hidden' // Prevents any potential horizontal scrolling
         },
         header: {
             display: 'flex',
@@ -95,7 +96,25 @@ export default function Currents() {
             textShadow: '2px 2px 2px rgba(190, 78, 255, 0.8), -2px -2px 2px rgba(190, 78, 255, 0.8), 2px -2px 2px rgba(190, 78, 255, 0.8), -2px 2px 2px rgba(190, 78, 255, 0.8)',
             display: 'inline',
         },
+        '@media (max-width: 768px)': {
+            h1: {
+                fontSize: '32px'
+            },
+            p: {
+                fontSize: '11px'
+            },
+            icon: {
+                width: '60px'
+            },
+            activity: {
+                fontSize: '13px'
+            },
+            activityText: {
+                fontSize: '11px'
+            }
+        }
     };
+    
 
     return (
         <div id="currents" style={styles.container}>

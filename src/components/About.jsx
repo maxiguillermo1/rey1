@@ -12,7 +12,8 @@ const styles = {
         justifyContent: 'center',
         height: '100vh',
         paddingLeft: '10%',
-        paddingRight: '10%'
+        paddingRight: '10%',
+        overflowX: 'hidden'  // This prevents horizontal scrolling which can cause white bars.
     },
     header: {
         display: 'flex',
@@ -45,7 +46,16 @@ const styles = {
         color: 'white'
     },
     //... Additional styles can be added as required
+    '@media (max-width: 768px)': {
+        imageFrame: {
+            width: '220px'
+        },
+        textInfo: {
+            fontSize: '10px'
+        }
+    }
 };
+
 
 export default function About() {
     return (

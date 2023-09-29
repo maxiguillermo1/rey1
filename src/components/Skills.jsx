@@ -9,6 +9,9 @@ export default function Skills() {
             alignItems: 'center',
             justifyContent: 'center',
             height: '100vh',
+            paddingLeft: '10%',
+            paddingRight: '10%',
+            overflowX: 'hidden'  // This prevents horizontal scrolling which can cause white bars.
         },
         header: {
             display: 'flex',
