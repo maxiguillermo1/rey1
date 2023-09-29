@@ -9,6 +9,7 @@ export default function Skills() {
             alignItems: 'center',
             justifyContent: 'center',
             height: '100vh',
+            width: '100%',
             paddingLeft: '10%',
             paddingRight: '10%',
         },

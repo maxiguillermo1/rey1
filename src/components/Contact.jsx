@@ -10,6 +10,7 @@ const styles = {
     alignItems: 'center',
     justifyContent: 'center',
     height: '100vh',
+    width: '100%',
   },
   header: {
     display: 'flex',
