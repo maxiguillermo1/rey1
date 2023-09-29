@@ -60,7 +60,8 @@ function App() {
 
   return (
     
-    <div className='bg-gradient-to-r from-aquamarine via-soft-aqua to-aquamarine min-h-screen px-4 md:px-8 lg:px-16 bg-gradient-mobile'>
+    <div className='bg-gradient-mobile min-h-screen px-4 md:px-8 lg:px-16'>
+
 
       <Nav /> {/* Include the Nav component */}
       
