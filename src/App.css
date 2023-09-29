@@ -1,26 +1,6 @@
-
-/* App.css */
-
-body, html {
-  margin: 0;
-  padding: 0;
-}
-
-.center-element {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-}
-
-.bg-gradient-to-r {
-  /* ...existing styles */
-  min-height: 100vh; /* Added this line */
-}
-
-@media (max-width: 980px) {
+@media (max-width: 768px) {
   h1 {
-      font-size: 5px; /* Adjust based on your design */
+      font-size: 20px; /* Adjust based on your design */
   }
 
   /* Add other selectors and properties here. */

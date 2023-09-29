@@ -16,15 +16,11 @@ export default function Currents() {
             height: '100vh',
             paddingLeft: '10%',
             paddingRight: '10%',
-            position: 'relative', // Add this line
-            zIndex: 2, // This will make Currents display on top of About
-
         },
         header: {
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
-          
         },
         h1: {
             fontFamily: 'Protomo, sans-serif',

@@ -1,13 +1,16 @@
 import React, { useEffect, useState } from 'react';
-import { Element } from 'react-scroll';
+import ReactDOM from 'react-dom';
+import { Link, Element } from 'react-scroll';
 import './App.css';
 import About from './components/About';
 import Currents from './components/Currents';
 import Contact from './components/Contact';
-import Nav from './components/Nav';  // Import Nav
+import Nav from './components/Nav';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
-import Reyna from './components/Reyna';
+
+import purpleStar from './images/purple-star.jpg';
+import heart from './images/heart-title.jpg';
 
 function App() {
   const [isVisible, setIsVisible] = useState(true);
@@ -16,7 +19,7 @@ function App() {
     const options = {
       root: null,
       rootMargin: '0px',
-      threshold: 0.5,
+      threshold: 0.5, // visibility threshold
     };
 
     const observer = new IntersectionObserver((entries, observer) => {
@@ -41,37 +44,78 @@ function App() {
   }, []);
 
   return (
-    <div className='bg-gradient-to-r from-aquamarine via-soft-aqua to-aquamarine min-h-screen'>
-    <Nav />  {/* Use Nav component */}
-    
-    <div className="flex flex-col items-center p-4 md:p-8 lg:p-16"> {/* Moved the padding utilities here */}
-        <div className="center-element w-full"> {/* Ensure each child takes full width */}
-            <Element name="about" style={{ opacity: isVisible ? 1 : 0, width: '100%' }}>
-                <Reyna />
-            </Element>
+    <div className='bg-gradient-to-r from-aquamarine via-soft-aqua to-aquamarine min-h-screen px-4 md:px-8 lg:px-16'>
+      <Nav /> {/* Include the Nav component */}
+      
+      <div className="flex flex-col items-center p-4">
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', paddingTop: '200px', paddingBottom: '5px' }}>
+          <img
+            src={heart}
+            alt="heart"
+            style={{
+              width: '10%',
+              height: 'auto',
+              objectFit: 'cover',
+            }}
+          />
+          <h1
+            style={{
+              fontFamily: 'Protomo, sans-serif',
+              fontSize: '30px',
+              color: 'white',
+              textShadow: '3px 3px 3px rgba(277,0,137,0.7), -3px -3px 3px rgba(277,0,137,0.7), 3px -3px 3px rgba(277,0,137,0.7), -3px 3px 3px rgba(277,0,137,0.7)',
+              paddingLeft: '15px', // Adjust this value for centering
+              paddingRight: '15px', // Adjust this value for centering
+              marginTop: '50px',
+            }}
+          >
+            REYNA AGUIRRE OKAMUNE
+          </h1>
+          <img
+            src={heart}
+            alt="heart"
+            style={{
+              width: '10%',
+              height: 'auto',
+              objectFit: 'cover',
+              transform: 'scaleX(-1)',
+            }}
+          />
         </div>
-        <div className="center-element w-full">
-            <Element name="about" style={{ opacity: isVisible ? 1 : 0, width: '100%' }}>
-                <About />
-            </Element>
-        </div>
-        <div className="center-element w-full">
-            <Element name="currents" style={{ opacity: isVisible ? 1 : 0, width: '100%' }}>
-                <Currents />
-            </Element>
-        </div>
-        <div className="center-element w-full">
-            <Element name="skills" style={{ opacity: isVisible ? 1 : 0, width: '100%' }}>
-                <Skills />
-            </Element>
-        </div>
-        <div className="center-element w-full">
-            <Element name="contact" style={{ opacity: isVisible ? 1 : 0, width: '100%' }}>
-                <Contact />
-            </Element>
-          </div>
-         </div>
+
+        <p style={{
+          fontFamily: 'dogica, sans-serif',
+          fontSize: '13px',
+          color: 'white',
+          marginTop: '10px',
+          paddingBottom: '200px',
+          textShadow: `
+          2px 2px 2px rgba(277,0,137,0.6), 
+          -2px -2px 2px rgba(277,0,137,0.6), 
+          2px -2px 2px rgba(277,0,137,0.6), 
+          -2px 2px 2px rgba(277,0,137,0.6)
+        `,
+        }}>
+          aspiring software engineer
+        </p>
+
+        <Element name="about" style={{ opacity: isVisible ? 1 : 0, width: '100%' }}>
+          <About />
+        </Element>
+        
+        <Element name="currents" style={{ opacity: isVisible ? 1 : 0, width: '100%' }}>
+          <Currents />
+        </Element>
+
+        <Element name="skills" style={{ opacity: isVisible ? 1 : 0, width: '100%' }}>
+          <Skills />
+        </Element>
+
+        <Element name="contact" style={{ opacity: isVisible ? 1 : 0, width: '100%' }}>
+          <Contact />
+        </Element>
       </div>
+    </div>
   );
 }
 
