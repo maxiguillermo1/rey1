@@ -1,25 +1,31 @@
-/* Define a background gradient for mobile screens */
-/* Define a background gradient for mobile screens */
-body {
-  margin: 0;
-  height: 100vh;
-  overflow-x: hidden;
-  background: linear-gradient(to right, var(--from-aquamarine), var(--via-soft-aqua), var(--to-aquamarine));
-  background-size: cover;
-  background-position: center;
-  overflow-x: hidden;
+/* Variables for reusability */
+:root {
+  --from-aquamarine: #00d1dc;
+  --via-soft-aqua: #9efffd;
+  --to-aquamarine: #00d1dc;
 }
 
+/* Set base styles for html and body */
+html, body, .min-h-screen {
+  height: 100%;
+  min-height: 100vh;
+}
 
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background: linear-gradient(to right, var(--from-aquamarine), var(--via-soft-aqua), var(--to-aquamarine));
+}
+
+/* Mobile navigation styles */
 .nav-mobile {
   display: none;
   flex-direction: column;
   position: absolute;
   top: 60px;
   right: 30px;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(255, 255, 255, 0);
   border-radius: 8px;
-  overflow: hidden;
 }
 
 .nav-mobile a {
@@ -33,22 +39,13 @@ body {
   border-bottom: none;
 }
 
+/* Responsive breakpoint for mobile nav */
 @media (max-width: 768px) {
-  
-
   .nav-mobile.active {
     display: flex;
     font-size: 14px;
   }
 }
-
-/* Apply the mobile background gradient for screens with a maximum width of 768px (adjust as needed) */
-@media (max-width: 768px) {
-  .bg-gradient-mobile {
-    background: linear-gradient(to right, from-aquamarine, via-soft-aqua, to-aquamarine);
-  }
-}
-
 
 
 @font-face {
@@ -179,8 +176,3 @@ body {
   background-size: cover, cover;
 }
 
-:root {
-  --from-aquamarine: #00d1dc;
-  --via-soft-aqua: #9efffd;
-  --to-aquamarine: #00d1dc;
-}
