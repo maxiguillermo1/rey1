@@ -8,7 +8,7 @@ const styles = {
         alignItems: 'center',
         justifyContent: 'center',
         paddingTop: '1vh',
-        height: '65vh',
+        height: '100vh',
         //background: 'linear-gradient(to right, #5edfff, #81ebff, #5edfff)'
     },
     header: {
