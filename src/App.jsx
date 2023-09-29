@@ -115,9 +115,7 @@ function App() {
           aspiring software engineer
         </p>
 
-        <Element name="title" style={{ opacity: isVisible ? 1 : 0, width: '100%' }}>
-          <About />
-        </Element>
+        
 
         <Element name="about" style={{ opacity: isVisible ? 1 : 0, width: '100%' }}>
           <About />

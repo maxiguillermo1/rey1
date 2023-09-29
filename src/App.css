@@ -6,8 +6,11 @@ body {
   overflow-x: hidden;
   background-size: cover;
   background-position: center;
+  background: linear-gradient(to right, #00d1dc, #9efffd, #00d1dc); /* Adding the gradient here */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
-
 
 .nav-mobile {
   display: none;
