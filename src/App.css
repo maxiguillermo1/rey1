@@ -2,13 +2,17 @@ body {
   margin: 0;
   overflow-x: hidden;
   background: linear-gradient(to right, var(--from-aquamarine), var(--via-soft-aqua), var(--to-aquamarine));
+  min-height: 100vh;
+  width: 100%;
 }
+
 /* Variables for reusability */
 :root {
   --from-aquamarine: #00d1dc;
   --via-soft-aqua: #9efffd;
   --to-aquamarine: #00d1dc;
 }
+
 
 @font-face {
   font-family: 'Excelorate';
