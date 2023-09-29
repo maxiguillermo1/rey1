@@ -39,13 +39,20 @@ body {
   border-bottom: none;
 }
 
-/* Responsive breakpoint for mobile nav */
 @media (max-width: 768px) {
   .nav-mobile.active {
     display: flex;
     font-size: 14px;
+    position: fixed;      /* Make it a fixed element */
+    top: 0;               /* Start from the top edge of the viewport */
+    left: 0;              /* Start from the left edge of the viewport */
+    width: 100vw;         /* Take up the full viewport width */
+    height: 100vh;        /* Take up the full viewport height */
+    background: linear-gradient(to right, var(--from-aquamarine), var(--via-soft-aqua), var(--to-aquamarine)); /* Gradient background */
+    z-index: 1000;        /* Optional: Place it on top of other content */
   }
 }
+
 
 
 @font-face {
