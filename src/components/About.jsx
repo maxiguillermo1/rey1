@@ -9,15 +9,11 @@ export default function About() {
 
     const styles = {
         container: {
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            justifyContent: 'center',
-            height: '100vh',
-            paddingLeft: '10%',
-            paddingRight: '10%',
-            position: 'relative', // Add this line
-            zIndex: 1, // Add this line
+            paddingLeft: '5%',
+            paddingRight: '5%',
+            height: 'auto',   // Changes here
+            minHeight: '100vh',
+            paddingBottom: '50px'  // Added padding
 
         },
         header: {
@@ -34,7 +30,8 @@ export default function About() {
         },
         h1: {
             fontFamily: 'Protomo, sans-serif',
-            fontSize: '40px',
+            
+            fontSize: '6.5vw',
             color: 'white',
             textShadow: '3px 3px 3px rgba(255,33,156,0.9), -3px -3px 3px rgba(255,33,156,0.9), 3px -3px 3px rgba(255,33,156,0.9), -3px 3px 3px rgba(255,33,156,0.9)',
             textAlign: 'center',
@@ -42,7 +39,8 @@ export default function About() {
             paddingRight: '30px'
         },
         imageFrame: {
-            width: '300px',
+            width: '80%',    // Reduce to fit on most screens
+            maxWidth: '300px', // but don't exceed 300px
             height: 'auto'
         },
         textInfo: {
