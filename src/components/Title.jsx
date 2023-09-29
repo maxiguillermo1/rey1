@@ -7,7 +7,8 @@ const styles = {
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
-        height: '100vh',
+        paddingTop: '1vh',
+        height: '65vh',
         //background: 'linear-gradient(to right, #5edfff, #81ebff, #5edfff)'
     },
     header: {
@@ -30,16 +31,16 @@ const styles = {
         color: 'white',
         textShadow: '3px 3px 3px rgba(255,33,156,0.9), -3px -3px 3px rgba(255,33,156,0.9), 3px -3px 3px rgba(255,33,156,0.9), -3px 3px 3px rgba(255,33,156,0.9)',
         textAlign: 'center',
-        paddingTop: '50px',
-        paddingLeft: '30px',
-        paddingRight: '30px'
+        paddingTop: '75px',
+        paddingLeft: '45px',
+        paddingRight: '45px'
     },
     subTitle: {
         fontFamily: 'dogica, sans-serif',
-        fontSize: '15px',
+        fontSize: '13px',
         color: 'white',
         textShadow: '2px 2px 2px rgba(255,33,156,0.7), -2px -2px 2px rgba(255,33,156,0.7), 2px -2px 2px rgba(255,33,156,0.7), -2px 2px 2px rgba(255,33,156,0.7)',
-        paddingTop: '20px'
+        paddingTop: '10px'
     }
 };
 
