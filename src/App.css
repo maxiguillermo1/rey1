@@ -1,15 +1,27 @@
 /* Define a background gradient for mobile screens */
 /* Define a background gradient for mobile screens */
-.bg-gradient-mobile {
-  background: linear-gradient(to bottom, from-aquamarine, via-soft-aqua, to-aquamarine);
-  height: 100vh; /* Ensure the container covers the full viewport height */
 
-  /* Adjust the background size to cover the entire container */
-  background-size: cover;
-  background-position: center;
-  
+.nav-mobile {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  right: 30px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
+  overflow: hidden;
 }
 
+.nav-mobile a {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-mobile a:last-child {
+  border-bottom: none;
+}
 
 /* Apply the mobile background gradient for screens with a maximum width of 768px (adjust as needed) */
 @media (max-width: 768px) {
