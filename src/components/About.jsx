@@ -5,15 +5,17 @@ import heartIcon from '../images/heart-icon.jpg';
 import 'font-awesome/css/font-awesome.min.css';
 
 const styles = {
-  container: {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center',
-    height: '100vh',
-    paddingLeft: '10%',
-    paddingRight: '10%',
-  },
+    container: {
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        minHeight: '100vh', // Use minHeight instead of height
+        width: '100%', // Add width: 100% to span the entire viewport
+        padding: '10%', // Adjust padding as needed
+        boxSizing: 'border-box',
+        overflowX: 'hidden',
+      },
   header: {
     display: 'flex',
     justifyContent: 'center',
@@ -57,7 +59,7 @@ const styles = {
 
 export default function About() {
   return (
-    <div id="aboutMe" className="container"> {/* Use the container class here */}
+    <div id="aboutMe" style={styles.container}>
       <div style={styles.header}>
         <img src={powerpuffMe} alt="me" style={styles.imageBounce} />
         <h1 style={styles.h1}>ABOUT ME</h1>

@@ -8,13 +8,15 @@ import desertIcon from '../images/desert-icon.jpg';
 export default function Currents() {
     const styles = {
         container: {
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            justifyContent: 'center',
-            height: '100vh',
-            paddingLeft: '10%',
-            paddingRight: '10%',
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          justifyContent: 'center',
+          minHeight: '100vh', // Use minHeight instead of height
+          width: '100%', // Add width: 100% to span the entire viewport
+          padding: '10%', // Adjust padding as needed
+          boxSizing: 'border-box',
+          overflowX: 'hidden',
         },
         header: {
             display: 'flex',
