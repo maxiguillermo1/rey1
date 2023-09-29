@@ -1,5 +1,10 @@
 /* Define a background gradient for mobile screens */
 /* Define a background gradient for mobile screens */
+body {
+  margin: 0;
+  height: 100vh;
+  overflow-x: hidden;
+}
 
 .nav-mobile {
   display: none;
