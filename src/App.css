@@ -1,5 +1,11 @@
 
 /* App.css */
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
 .center-element {
   display: flex;
   justify-content: center;
