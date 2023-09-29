@@ -2,6 +2,7 @@ import React from 'react';
 import powerpuffMe from '../images/powerpuff-me-2.jpg';
 import photoFrame from '../images/photo-booth.jpg';
 import heartIcon from '../images/heart-icon.jpg';
+import 'font-awesome/css/font-awesome.min.css';
 
 const styles = {
     container: {
@@ -9,7 +10,7 @@ const styles = {
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
-        height: 'auto', 
+        height: '100vh',
         paddingLeft: '10%',
         paddingRight: '10%'
     },
@@ -35,17 +36,15 @@ const styles = {
         paddingRight: '30px'
     },
     imageFrame: {
-        maxWidth: '90%',
+        width: '400px',
         height: 'auto'
     },
     textInfo: {
         fontFamily: 'Crystal, sans-serif',
         fontSize: '12px',
-        color: 'white',
-        maxWidth: '90%',
-        overflow: 'hidden',
-        textOverflow: 'ellipsis'
+        color: 'white'
     },
+    //... Additional styles can be added as required
 };
 
 export default function About() {
@@ -64,9 +63,33 @@ export default function About() {
                         <InfoBlock img={heartIcon} label="DEGREE:" text="b.s. in computer science" />
                         <InfoBlock img={heartIcon} label="LEADERSHIP:" text="recruitment membership chair of w.i.c." />
                         <InfoBlock img={heartIcon} label="PROGRAM:" text="break through tech ai at ucla site" />
+                        {/* ... More InfoBlocks as needed */}
                     </p>
                 </div>
             </div>
+        </div>
+    );
+}
+
+function InfoBlock({ img, label, text }) {
+    return (
+        <div style={{ display: 'flex', alignItems: 'center', marginBottom: '20px' }}>
+            <img src={img} alt="Icon" style={{ width: '25px', height: '20px',  animation: 'pulse 1s infinite' }} />
+            <span style={{ 
+                fontFamily: 'dogica, sans-serif',
+                textShadow: '2px 2px 2px rgba(255,33,156,0.7), -2px -2px 2px rgba(255,33,156,0.7), 2px -2px 2px rgba(255,33,156,0.7), -2px 2px 2px rgba(255,33,156,0.7)',
+                paddingLeft: '15px',
+                paddingRight: '15px'
+            }}>
+                {label}
+            </span>
+            <span style={{ 
+                fontFamily: 'dogica, sans-serif',
+                textShadow: '2px 2px 2px rgba(0, 181, 195, 0.7), -2px -2px 2px rgba(0, 181, 195, 0.7), 2px -2px 2px rgba(0, 181, 195, 0.7), -2px 2px 2px rgba(0, 181, 195, 0.7)',
+                fontSize: '10px'
+            }}>
+                {text}
+            </span>
         </div>
     );
 }
