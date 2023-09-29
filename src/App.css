@@ -1,3 +1,4 @@
+
 /* Common styles for all screen sizes */
 
 @font-face {
@@ -80,6 +81,13 @@
 }
 
 /* New styles related to the changes we discussed */
+
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+}
+
 
 body {
   margin: 0;

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link, Element } from 'react-scroll';
 import './App.css';
+
 import About from './components/About';
 import Currents from './components/Currents';
 import Contact from './components/Contact';
@@ -46,9 +47,10 @@ function App() {
       <Title />
       <About />
       <Currents />
-      <Contact />
-      <Projects />
+      
+      
       <Skills />
+      <Contact />
     </div>
   );
 }
