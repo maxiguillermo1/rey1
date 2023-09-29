@@ -1,5 +1,10 @@
+@media (max-width: 768px) {
+  h1 {
+      font-size: 20px; /* Adjust based on your design */
+  }
 
-/* Common styles for all screen sizes */
+  /* Add other selectors and properties here. */
+}
 
 @font-face {
   font-family: 'Excelorate';
@@ -25,6 +30,7 @@
        url('./fonts/Powerpuff.woff') format('woff');
 }
 
+
 @font-face {
   font-family: 'LemonMilk';
   src: local('LEMONMILK-MediumItalic'),
@@ -43,16 +49,6 @@
        url('./fonts/dogica.woff') format('woff');
 }
 
-/* Styles for screens smaller than 768px (e.g., smartphones) */
-@media (max-width: 768px) {
-  h1 {
-    font-size: 20px; /* Adjust based on your design */
-  }
-
-  /* Add other selectors and properties for smaller screens here */
-}
-
-/* Rest of your existing CSS styles below */
 .star-shaped {
   clip-path: polygon(50% 0%, 61.8% 38.2%, 98.1% 38.2%, 68.4% 61.8%, 79.4% 95%, 50% 76.6%, 20.6% 95%, 31.6% 61.8%, 1.9% 38.2%, 38.2% 38.2%);
   object-position: center 10%;
@@ -60,7 +56,74 @@
   width: 200px;  /* Set width */
 }
 
-/* Add your keyframes animations here */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.bounce {
+  animation: bounce 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.pulse {
+  animation: pulse 1s infinite;
+}
+
+
+@keyframes ringing {
+  0% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
+}
+
+@keyframes ringingFlipped {
+  0% {
+    transform: scaleX(-1) rotate(-5deg); 
+  }
+  50% {
+    transform: scaleX(-1) rotate(5deg); 
+  }
+  100% {
+    transform: scaleX(-1) rotate(-5deg); 
+  }
+}
+
+@keyframes flying {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 
 .cloud-background {
   background: 
@@ -69,71 +132,4 @@
   background-repeat: repeat, no-repeat; 
   background-position: center center, center center;
   background-size: cover, cover;
-}
-
-/* Styles for screens smaller than 768px (e.g., smartphones) */
-@media (max-width: 768px) {
-  h1 {
-    font-size: 20px; /* Adjust based on your design */
-  }
-
-  /* Add other selectors and properties for smaller screens here */
-}
-
-/* New styles related to the changes we discussed */
-
-html, body {
-  height: 100%;
-  margin: 0;
-  overflow-x: hidden;
-}
-
-
-body {
-  margin: 0;
-  height: 100vh;
-  overflow-x: hidden;
-}
-
-.nav-mobile {
-  display: none;
-  flex-direction: column;
-  position: absolute;
-  top: 60px;
-  right: 30px;
-  background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.nav-mobile a {
-  padding: 10px 20px;
-  text-decoration: none;
-  color: white;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.nav-mobile a:last-child {
-  border-bottom: none;
-}
-
-.hamburger-menu {
-  display: none;
-  font-size: 30px;
-  color: white;
-  cursor: pointer;
-}
-
-@media (max-width: 768px) {
-  .hamburger-menu {
-    display: block;
-  }
-
-  .desktop-nav {
-    display: none;
-  }
-
-  .nav-mobile.active {
-    display: flex;
-  }
 }

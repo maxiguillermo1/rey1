@@ -45,7 +45,7 @@ const styles = {
 
 export default function Title() {
     return (
-        <div style={styles.container}>
+        <div id="title"style={styles.container}>
             <div style={styles.header}>
                 <img src={heart} alt="heart" style={styles.imageHeart} />
                 <h1 style={styles.h1}>REYNA AGUIRRE OKAMUNE</h1>

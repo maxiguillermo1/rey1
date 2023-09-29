@@ -36,7 +36,7 @@ const styles = {
         paddingRight: '30px'
     },
     imageFrame: {
-        width: '300px',
+        width: '400px',
         height: 'auto'
     },
     textInfo: {
@@ -62,6 +62,7 @@ export default function About() {
                         <InfoBlock img={heartIcon} label="UNIVERSITY:" text="california state university, long beach" />
                         <InfoBlock img={heartIcon} label="DEGREE:" text="b.s. in computer science" />
                         <InfoBlock img={heartIcon} label="LEADERSHIP:" text="recruitment membership chair of w.i.c." />
+                        <InfoBlock img={heartIcon} label="PROGRAM:" text="break through tech ai at ucla site" />
                         {/* ... More InfoBlocks as needed */}
                     </p>
                 </div>
