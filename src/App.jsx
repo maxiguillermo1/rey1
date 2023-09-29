@@ -13,8 +13,8 @@ import Reyna from './components/Reyna';
 import purpleStar from './images/purple-star.jpg';
 import heart from './images/heart-title.jpg';
 
-
 function App() {
+  
   const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
@@ -46,10 +46,7 @@ function App() {
   }, []);
 
   return (
-    <div style={{
-        background: 'linear-gradient(to bottom center, var(--from-aquamarine), var(--via-soft-aqua), var(--to-aquamarine))',
-        minHeight: '100vh'
-    }}>
+    <div className="app-gradient">
       <Nav /> {/* Include the Nav component */}
       <div className="flex flex-col items-center p-4">
         <Element name="about" style={{ opacity: isVisible ? 1 : 0, width: '100%' }}>
