@@ -46,7 +46,10 @@ function App() {
   }, []);
 
   return (
-      <div>
+    <div style={{
+        background: 'linear-gradient(to bottom center, var(--from-aquamarine), var(--via-soft-aqua), var(--to-aquamarine))',
+        minHeight: '100vh'
+    }}>
       <Nav /> {/* Include the Nav component */}
       <div className="flex flex-col items-center p-4">
         <Element name="about" style={{ opacity: isVisible ? 1 : 0, width: '100%' }}>
@@ -55,15 +58,12 @@ function App() {
         <Element name="about" style={{ opacity: isVisible ? 1 : 0, width: '100%' }}>
           <About />
         </Element>
-        
         <Element name="currents" style={{ opacity: isVisible ? 1 : 0, width: '100%' }}>
           <Currents />
         </Element>
-
         <Element name="skills" style={{ opacity: isVisible ? 1 : 0, width: '100%' }}>
           <Skills />
         </Element>
-
         <Element name="contact" style={{ opacity: isVisible ? 1 : 0, width: '100%' }}>
           <Contact />
         </Element>
