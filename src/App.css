@@ -2,6 +2,10 @@
 .bg-gradient-mobile {
   background: linear-gradient(to bottom, from-aquamarine, via-soft-aqua, to-aquamarine);
   height: 100vh; /* This ensures the container covers the full viewport height */
+  /* Adjust the background size to cover the entire container */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 
