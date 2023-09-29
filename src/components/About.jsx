@@ -4,50 +4,52 @@ import photoFrame from '../images/photo-booth.jpg';
 import heartIcon from '../images/heart-icon.jpg';
 import 'font-awesome/css/font-awesome.min.css';
 
-const styles = {
-    container: {
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
-        height: '100vh',
-        paddingLeft: '10%',
-        paddingRight: '10%'
-    },
-    header: {
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        paddingBottom: '75px'
-    },
-    imageBounce: {
-        width: '55px',
-        height: 'auto',
-        animation: 'bounce 2s infinite',
-        animationTimingFunction: 'cubic-bezier(0.28, 0.84, 0.42, 1)'
-    },
-    h1: {
-        fontFamily: 'Protomo, sans-serif',
-        fontSize: '40px',
-        color: 'white',
-        textShadow: '3px 3px 3px rgba(255,33,156,0.9), -3px -3px 3px rgba(255,33,156,0.9), 3px -3px 3px rgba(255,33,156,0.9), -3px 3px 3px rgba(255,33,156,0.9)',
-        textAlign: 'center',
-        paddingLeft: '30px',
-        paddingRight: '30px'
-    },
-    imageFrame: {
-        width: '300px',
-        height: 'auto'
-    },
-    textInfo: {
-        fontFamily: 'Crystal, sans-serif',
-        fontSize: '12px',
-        color: 'white'
-    },
-    //... Additional styles can be added as required
-};
 
 export default function About() {
+    
+    const styles = {
+        container: {
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            justifyContent: 'center',
+            height: '100vh',
+            paddingLeft: '10%',
+            paddingRight: '10%'
+        },
+        header: {
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            paddingBottom: '75px'
+        },
+        imageBounce: {
+            width: '55px',
+            height: 'auto',
+            animation: 'bounce 2s infinite',
+            animationTimingFunction: 'cubic-bezier(0.28, 0.84, 0.42, 1)'
+        },
+        h1: {
+            fontFamily: 'Protomo, sans-serif',
+            fontSize: '40px',
+            color: 'white',
+            textShadow: '3px 3px 3px rgba(255,33,156,0.9), -3px -3px 3px rgba(255,33,156,0.9), 3px -3px 3px rgba(255,33,156,0.9), -3px 3px 3px rgba(255,33,156,0.9)',
+            textAlign: 'center',
+            paddingLeft: '30px',
+            paddingRight: '30px'
+        },
+        imageFrame: {
+            width: '300px',
+            height: 'auto'
+        },
+        textInfo: {
+            fontFamily: 'Crystal, sans-serif',
+            fontSize: '12px',
+            color: 'white'
+        },
+        //... Additional styles can be added as required
+    };
+    
     return (
         <div id="aboutMe" style={styles.container}>
             <div style={styles.header}>
@@ -69,6 +71,8 @@ export default function About() {
         </div>
     );
 }
+
+
 
 function InfoBlock({ img, label, text }) {
     return (

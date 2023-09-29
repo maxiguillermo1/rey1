@@ -21,6 +21,7 @@ export default function Currents() {
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
+            paddingBottom: '75px'
         },
         h1: {
             fontFamily: 'Protomo, sans-serif',
