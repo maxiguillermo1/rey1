@@ -42,16 +42,17 @@ function App() {
   }, []);
 
   return (
-    <div className='bg-gradient-to-r from-aquamarine via-soft-aqua to-aquamarine min-h-screen'>
-      <Nav />
-      <div className="container mx-auto px-4 md:px-8 lg:px-16 flex flex-col items-center p-4">
-        <Reyna />
-        <About />
-        <Currents />
-        <Skills />
-        <Contact />
-      </div>
-    </div>
+    <div className="app-container">
+  <Nav />
+  <div className="content">
+    <Reyna />
+    <About />
+    <Currents />
+    <Skills />
+    <Contact />
+  </div>
+</div>
+
   );
 }
 
