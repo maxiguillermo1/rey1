@@ -4,7 +4,7 @@ import { Link } from 'react-scroll';
 const navStyles = {
   position: 'sticky',
   top: 0,
-
+  zIndex: 1000, // Add this line to set a higher z-index
   fontFamily: 'Protomo, sans-serif',
   fontSize: '23px',
   color: 'white',
@@ -18,6 +18,7 @@ const navStyles = {
     fontSize: '15px',
   }
 };
+
 
 export default function Nav() {
   return (
