@@ -19,13 +19,14 @@ export default function Reyna() {
           paddingBottom: '75px',
         },
         image: {
-          width: '10%',
+            
+          width: '15%',
           height: 'auto',
           objectFit: 'cover',
         },
         h1: {
           fontFamily: 'Protomo, sans-serif',
-          fontSize: '35px',
+          fontSize: '30px',
           color: 'white',
           textShadow: '3px 3px 3px rgba(277,0,137,0.7), -3px -3px 3px rgba(277,0,137,0.7), 3px -3px 3px rgba(277,0,137,0.7), -3px 3px 3px rgba(277,0,137,0.7)',
           paddingLeft: '15px',
@@ -33,14 +34,15 @@ export default function Reyna() {
           marginTop: '50px',
         },
         reversedImage: {
-          width: '10%',
+          
+          width: '15%',
           height: 'auto',
           objectFit: 'cover',
           transform: 'scaleX(-1)',
         },
         text: {
             fontFamily: 'dogica, sans-serif',
-            fontSize: '13px',
+            fontSize: '12px',
             color: 'white',
             marginTop: '-65px', // Reduced margin to make it closer
             paddingBottom: '200px',

@@ -1,15 +1,24 @@
-/* ... Your existing CSS code ... */
 
-.app-gradient {
-  background: linear-gradient(to bottom center, var(--from-aquamarine), var(--via-soft-aqua), var(--to-aquamarine));
-  min-height: '100vh';
+/* App.css */
+body {
+  margin: 0;
+  height: 100vh;
+  
+  background: linear-gradient(to bottom left, var(--from-aquamarine), var(--via-soft-aqua), var(--to-aquamarine));
+  min-height: 100vh; /* Ensure it covers the entire viewport height */
+  min-width: 100vw; /* Ensure it covers the entire viewport width */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Variables for reusability */
-:root {
-  --from-aquamarine: #00d1dc;
-  --via-soft-aqua: #9efffd;
-  --to-aquamarine: #00d1dc;
+@media (max-width: 768px) {
+  h1 {
+      font-size: 20px; /* Adjust based on your design */
+  }
+
+  /* Add other selectors and properties here. */
 }
 
 @font-face {
