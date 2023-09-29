@@ -4,10 +4,12 @@ body {
   overflow-x: hidden;
   background: linear-gradient(to right, var(--from-aquamarine), var(--via-soft-aqua), var(--to-aquamarine));
   min-height: 100vh; /* Ensure it covers the entire viewport height */
+  min-width: 100vw; /* Ensure it covers the entire viewport width */
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start; /* Adjust this if needed */
+  justify-content: center;
+  text-align: center;
 }
 
 /* Variables for reusability */
@@ -16,6 +18,9 @@ body {
   --via-soft-aqua: #9efffd;
   --to-aquamarine: #00d1dc;
 }
+
+/* Rest of your CSS styles */
+
 
 
 @font-face {
