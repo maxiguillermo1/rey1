@@ -1,3 +1,9 @@
+/* ... Your existing CSS code ... */
+
+.app-gradient {
+  background: linear-gradient(to bottom center, var(--from-aquamarine), var(--via-soft-aqua), var(--to-aquamarine));
+  min-height: '100vh';
+}
 
 /* Variables for reusability */
 :root {
