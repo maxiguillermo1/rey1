@@ -7,9 +7,7 @@ const styles = {
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
-        paddingTop: '1vh',
-        height: '100vh',
-        //background: 'linear-gradient(to right, #5edfff, #81ebff, #5edfff)'
+        height: 'auto'
     },
     header: {
         display: 'flex',
@@ -18,13 +16,13 @@ const styles = {
         textAlign: 'center'
     },
     imageHeart: {
-        width: '10%',
+        width: '10vw',
         height: 'auto'
     },
     flippedImageHeart: {
-        width: '10%',
+        width: '10vw',
         height: 'auto',
-        transform: 'scaleX(-1)'  // This flips the image horizontally
+        transform: 'scaleX(-1)'
     },
     h1: {
         fontFamily: 'Protomo, sans-serif',
@@ -32,10 +30,7 @@ const styles = {
         color: 'white',
         textShadow: '3px 3px 3px rgba(255,33,156,0.9), -3px -3px 3px rgba(255,33,156,0.9), 3px -3px 3px rgba(255,33,156,0.9), -3px 3px 3px rgba(255,33,156,0.9)',
         textAlign: 'center',
-        paddingTop: '75px',
-        paddingLeft: '45px',
-        paddingRight: '45px',
-        margin: '0 45px'
+        margin: '0 45px',
     },
     subTitle: {
         fontFamily: 'dogica, sans-serif',
@@ -43,16 +38,13 @@ const styles = {
         color: 'white',
         textShadow: '2px 2px 2px rgba(255,33,156,0.7), -2px -2px 2px rgba(255,33,156,0.7), 2px -2px 2px rgba(255,33,156,0.7), -2px 2px 2px rgba(255,33,156,0.7)',
         textAlign: 'center',
-        marginTop: '10px',
-        paddingTop: '10px',
-        paddingLeft: '45px',
-        paddingRight: '45px'
+        margin: '10px 45px',
     }
 };
 
 export default function Title() {
     return (
-        <div id="title"style={styles.container}>
+        <div id="title" style={styles.container}>
             <div style={styles.header}>
                 <img src={heart} alt="heart" style={styles.imageHeart} />
                 <h1 style={styles.h1}>REYNA AGUIRRE OKAMUNE</h1>
