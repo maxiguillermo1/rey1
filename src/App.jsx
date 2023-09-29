@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import ReactDOM from 'react-dom';
 import { Link, Element } from 'react-scroll';
 import './App.css';
 import About from './components/About';
@@ -12,21 +11,6 @@ import Skills from './components/Skills';
 import purpleStar from './images/purple-star.jpg';
 import heart from './images/heart-title.jpg';
 
-// Define your mobile styles
-const mobileStyles = {
-  // Adjust font sizes
-  fontSize: '20px',
-
-  // Reduce padding and margins
-  padding: '10px',
-  margin: '5px',
-
-  // Adjust image size
-  width: '20%',
-  height: 'auto',
-
-  // Any other mobile-specific styles
-};
 function App() {
   const [isVisible, setIsVisible] = useState(true);
 
@@ -59,44 +43,39 @@ function App() {
   }, []);
 
   return (
-    
-    <div className='bg-gradient-to-r from-aquamarine via-soft-aqua to-aquamarine min-h-screen px-4 md:px-8 lg:px-16'>
-      <Nav /> {/* Include the Nav component */}
+    <div className='min-h-screen px-4 md:px-8 lg:px-16'>
+      <Nav />
       
       <div className="flex flex-col items-center p-4">
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', paddingTop: '200px', paddingBottom: '5px' }}>
-          <img
-            src={heart}
-            alt="heart"
-            style={{
-              width: '10%',
-              height: 'auto',
-              objectFit: 'cover',
-            }}
-          />
-          <h1
-            style={{
-              fontFamily: 'Protomo, sans-serif',
-              fontSize: '30px',
-              color: 'white',
-              textShadow: '3px 3px 3px rgba(277,0,137,0.7), -3px -3px 3px rgba(277,0,137,0.7), 3px -3px 3px rgba(277,0,137,0.7), -3px 3px 3px rgba(277,0,137,0.7)',
-              paddingLeft: '15px', // Adjust this value for centering
-              paddingRight: '15px', // Adjust this value for centering
-              marginTop: '50px',
-            }}
-          >
+        <div style={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          paddingTop: '200px',
+          paddingBottom: '5px'
+        }}>
+          <img src={heart} alt="heart" style={{
+            width: '10%',
+            height: 'auto',
+            objectFit: 'cover'
+          }} />
+          <h1 style={{
+            fontFamily: 'Protomo, sans-serif',
+            fontSize: '30px',
+            color: 'white',
+            textShadow: '3px 3px 3px rgba(277,0,137,0.7), -3px -3px 3px rgba(277,0,137,0.7), 3px -3px 3px rgba(277,0,137,0.7), -3px 3px 3px rgba(277,0,137,0.7)',
+            paddingLeft: '15px',
+            paddingRight: '15px',
+            marginTop: '50px'
+          }}>
             REYNA AGUIRRE OKAMUNE
           </h1>
-          <img
-            src={heart}
-            alt="heart"
-            style={{
-              width: '10%',
-              height: 'auto',
-              objectFit: 'cover',
-              transform: 'scaleX(-1)',
-            }}
-          />
+          <img src={heart} alt="heart" style={{
+            width: '10%',
+            height: 'auto',
+            objectFit: 'cover',
+            transform: 'scaleX(-1)'
+          }} />
         </div>
 
         <p style={{
@@ -105,17 +84,10 @@ function App() {
           color: 'white',
           marginTop: '10px',
           paddingBottom: '200px',
-          textShadow: `
-          2px 2px 2px rgba(277,0,137,0.6), 
-          -2px -2px 2px rgba(277,0,137,0.6), 
-          2px -2px 2px rgba(277,0,137,0.6), 
-          -2px 2px 2px rgba(277,0,137,0.6)
-        `,
+          textShadow: '2px 2px 2px rgba(277,0,137,0.6), -2px -2px 2px rgba(277,0,137,0.6), 2px -2px 2px rgba(277,0,137,0.6), -2px 2px 2px rgba(277,0,137,0.6)'
         }}>
           aspiring software engineer
         </p>
-
-        
 
         <Element name="about" style={{ opacity: isVisible ? 1 : 0, width: '100%' }}>
           <About />
