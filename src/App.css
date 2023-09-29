@@ -6,6 +6,17 @@
   /* Add other selectors and properties here. */
 }
 
+/* Define the gradient colors */
+.bg-gradient-to-r {
+  background-image: linear-gradient(to right, #00FFFF, #00CED1, #00FFFF);
+}
+
+/* Additional styles */
+.min-h-screen {
+  min-height: 100vh;
+  /* Add any other styles you need for the 'min-h-screen' class here */
+}
+
 body, html {
   margin: 0;
   padding: 0;
