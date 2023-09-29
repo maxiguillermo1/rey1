@@ -1,0 +1,135 @@
+@media (max-width: 768px) {
+  h1 {
+      font-size: 20px; /* Adjust based on your design */
+  }
+
+  /* Add other selectors and properties here. */
+}
+
+@font-face {
+  font-family: 'Excelorate';
+  src: local('Excelorate-font'),
+       url('./fonts/Excelorate-font.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Protomo';
+  src: local('Promtomo'),
+       url('./fonts/Protomo.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Digistick';
+  src: local('Digistick'),
+       url('./fonts/Digistick.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Powerpuff';
+  src: local('Powerpuff'),
+       url('./fonts/Powerpuff.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'LemonMilk';
+  src: local('LEMONMILK-MediumItalic'),
+       url('./fonts/LEMONMILK-MediumItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Crystal';
+  src: local('CrystalUniverse'),
+       url('./fonts/CrystalUniverse.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'dogica';
+  src: local('dogica'),
+       url('./fonts/dogica.woff') format('woff');
+}
+
+.star-shaped {
+  clip-path: polygon(50% 0%, 61.8% 38.2%, 98.1% 38.2%, 68.4% 61.8%, 79.4% 95%, 50% 76.6%, 20.6% 95%, 31.6% 61.8%, 1.9% 38.2%, 38.2% 38.2%);
+  object-position: center 10%;
+  height: 200px;  /* Set height */
+  width: 200px;  /* Set width */
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.bounce {
+  animation: bounce 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.pulse {
+  animation: pulse 1s infinite;
+}
+
+
+@keyframes ringing {
+  0% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
+}
+
+@keyframes ringingFlipped {
+  0% {
+    transform: scaleX(-1) rotate(-5deg); 
+  }
+  50% {
+    transform: scaleX(-1) rotate(5deg); 
+  }
+  100% {
+    transform: scaleX(-1) rotate(-5deg); 
+  }
+}
+
+@keyframes flying {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.cloud-background {
+  background: 
+      url('cloud.jpg'), /* This is your cloud image */
+      your_current_background_color; /* Replace with your color, e.g., rgba(0, 128, 255, 1) */
+  background-repeat: repeat, no-repeat; 
+  background-position: center center, center center;
+  background-size: cover, cover;
+}

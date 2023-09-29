@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'Excelorate';
+    src: local('Excelorate-font'),
+         url('./fonts/Excelorate-font.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Protomo';
+    src: local('Promtomo'),
+         url('./fonts/Protomo.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Digistick';
+    src: local('Digistick'),
+         url('./fonts/Digistick.woff') format('woff');
+  }
+  
+  
+@font-face {
+    font-family: 'Powerpuff';
+    src: local('Powerpuff'),
+         url('./fonts/Powerpuff.woff') format('woff');
+  }
+  
+  @font-face {
+    font-family: 'LemonMilk';
+    src: local('LEMONMILK-MediumItalic'),
+         url('./fonts/LEMONMILK-MediumItalic.woff') format('woff');
+  }
+  
+  @font-face {
+     font-family: 'CrystalUniverse';
+     src: local('CrystalUniverse'),
+          url('./fonts/CrystalUniverse.woff') format('woff');
+   }
+   
