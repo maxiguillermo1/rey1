@@ -48,7 +48,7 @@ function App() {
   }, []);
   
   return (
-    <div className='bg-gradient-to-r from-aquamarine via-soft-aqua to-aquamarine min-h-screen px-4 md:px-8 lg:px-16'>
+    <div className='bg-gradient-to-r from-aquamarine via-soft-aqua to-aquamarine min-h-screen px-4 md:px-8 lg:px-16 min-h-screen'> {/* Added min-h-screen */}
       <nav style={{ 
          position: 'sticky',
          top: 0,
@@ -64,46 +64,35 @@ function App() {
        `,
          }} 
          className="flex justify-center items-center p-10">
-
-        <ul className="flex space-x-10">
-          <li><Link to="about" smooth={true}>ABOUT ME</Link></li>
-          <li><Link to="currents" smooth={true}>CURRENT FAVORITES</Link></li>
-          <li><Link to="skills" smooth={true}>SKILLS</Link></li>
-          <li><Link to="contact" smooth={true}>CONTACT</Link></li>
-        </ul>
+        {/* ... (existing nav code) */}
       </nav>
 
-
       <div className="flex flex-col items-center p-4">
-
-      
-
-      <p style={{
-          
-      }}>
-        
-      </p>
-
-
-      
-      <Element name="about" style={{ opacity: isVisible ? 1 : 0, width: '100%' }}>
-          <Reyna />
-        </Element>
-        <Element name="about" style={{ opacity: isVisible ? 1 : 0, width: '100%' }}>
-          <About />
-        </Element>
-        
-        <Element name="currents" style={{ opacity: isVisible ? 1 : 0, width: '100%' }}>
-          <Currents />
-        </Element>
-
-        <Element name="skills" style={{ opacity: isVisible ? 1 : 0, width: '100%' }}>
-          <Skills />
-        </Element>
-
-        <Element name="contact" style={{ opacity: isVisible ? 1 : 0, width: '100%' }}>
-          <Contact />
+        <div className="center-element"> {/* Added wrapper div */}
+          <Element name="about" style={{ opacity: isVisible ? 1 : 0, width: '100%' }}>
+            <Reyna />
           </Element>
+        </div>
+        <div className="center-element"> {/* Added wrapper div */}
+          <Element name="about" style={{ opacity: isVisible ? 1 : 0, width: '100%' }}>
+            <About />
+          </Element>
+        </div>
+        <div className="center-element"> {/* Added wrapper div */}
+          <Element name="currents" style={{ opacity: isVisible ? 1 : 0, width: '100%' }}>
+            <Currents />
+          </Element>
+        </div>
+        <div className="center-element"> {/* Added wrapper div */}
+          <Element name="skills" style={{ opacity: isVisible ? 1 : 0, width: '100%' }}>
+            <Skills />
+          </Element>
+        </div>
+        <div className="center-element"> {/* Added wrapper div */}
+          <Element name="contact" style={{ opacity: isVisible ? 1 : 0, width: '100%' }}>
+            <Contact />
+          </Element>
+        </div>
       </div>
     </div>
   );

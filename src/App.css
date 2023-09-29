@@ -1,5 +1,16 @@
 
 /* App.css */
+.center-element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.bg-gradient-to-r {
+  /* ...existing styles */
+  min-height: 100vh; /* Added this line */
+}
 
 @media (max-width: 768px) {
   h1 {
