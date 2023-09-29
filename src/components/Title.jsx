@@ -14,7 +14,8 @@ const styles = {
     header: {
         display: 'flex',
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+        textAlign: 'center'
     },
     imageHeart: {
         width: '10%',
@@ -33,7 +34,8 @@ const styles = {
         textAlign: 'center',
         paddingTop: '75px',
         paddingLeft: '45px',
-        paddingRight: '45px'
+        paddingRight: '45px',
+        margin: '0 45px'
     },
     subTitle: {
         fontFamily: 'dogica, sans-serif',
@@ -41,6 +43,7 @@ const styles = {
         color: 'white',
         textShadow: '2px 2px 2px rgba(255,33,156,0.7), -2px -2px 2px rgba(255,33,156,0.7), 2px -2px 2px rgba(255,33,156,0.7), -2px 2px 2px rgba(255,33,156,0.7)',
         textAlign: 'center',
+        marginTop: '10px',
         paddingTop: '10px',
         paddingLeft: '45px',
         paddingRight: '45px'
