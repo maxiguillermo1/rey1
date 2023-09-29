@@ -6,7 +6,7 @@ import 'font-awesome/css/font-awesome.min.css';
 
 
 export default function About() {
-    
+
     const styles = {
         container: {
             display: 'flex',
@@ -15,7 +15,10 @@ export default function About() {
             justifyContent: 'center',
             height: '100vh',
             paddingLeft: '10%',
-            paddingRight: '10%'
+            paddingRight: '10%',
+            position: 'relative', // Add this line
+            zIndex: 1, // Add this line
+
         },
         header: {
             display: 'flex',

@@ -1,17 +1,5 @@
 
 /* App.css */
-body {
-  margin: 0;
-  height: 100vh;
-  
-  background: linear-gradient(to bottom left, var(--from-aquamarine), var(--via-soft-aqua), var(--to-aquamarine));
-  min-height: 100vh; /* Ensure it covers the entire viewport height */
-  min-width: 100vw; /* Ensure it covers the entire viewport width */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
 
 @media (max-width: 768px) {
   h1 {
