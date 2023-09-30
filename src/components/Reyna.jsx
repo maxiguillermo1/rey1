@@ -2,6 +2,22 @@ import React from 'react';
 import heart from '../images/heart-title.jpg';
 
 export default function Reyna() {
+    const isMobile = window.innerWidth <= 768;
+
+    const mobileStyles = {
+        h1: {
+            fontSize: '20px',
+            marginTop: '30px',
+        },
+        imageStyle: {
+            width: '60px',
+        },
+        flippedImageStyle: {
+            width: '60px',
+            transform: 'scaleX(-1)',
+        }
+    };
+
     const styles = {
         container: {
             display: 'flex',
@@ -72,9 +88,9 @@ export default function Reyna() {
     return (
         <div id="reyna" style={styles.container}>
             <div style={styles.header}>
-                <img src={heart} alt="heart" style={styles.imageStyle} />
-                <h1 style={styles.h1}>REYNA AGUIRRE OKAMUNE</h1>
-                <img src={heart} alt="heart" style={styles.flippedImageStyle} />
+                <img src={heart} alt="heart" style={isMobile ? mobileStyles.imageStyle : styles.imageStyle} />
+                <h1 style={isMobile ? mobileStyles.h1 : styles.h1}>REYNA AGUIRRE OKAMUNE</h1>
+                <img src={heart} alt="heart" style={isMobile ? mobileStyles.flippedImageStyle : styles.flippedImageStyle} />
             </div>
             <p style={styles.textInfo}>aspiring software engineer</p>
         </div>
