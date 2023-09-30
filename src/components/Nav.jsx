@@ -17,25 +17,14 @@ const navStyles = {
   `
 };
 
-const mobileStyles = {
-  fontSize: '14px',
-  ul: {
-    flexDirection: 'row',
-    overflowX: 'auto'
-  },
-  li: {
-    marginBottom: '0'
-  }
-};
-
 export default function Nav() {
   return (
     <nav style={navStyles} className="flex justify-center items-center p-10">
-      <ul style={window.innerWidth <= 768 ? mobileStyles.ul : {}} className="flex space-x-10 space-y-0 md:space-x-15 md:space-y-0 md:flex-row">
-        <li style={window.innerWidth <= 768 ? mobileStyles.li : {}}><Link to="aboutMe" smooth={true} className="nav-link">ABOUT ME</Link></li>
-        <li style={window.innerWidth <= 768 ? mobileStyles.li : {}}><Link to="currents" smooth={true} className="nav-link">CURRENT FAVORITES</Link></li>
-        <li style={window.innerWidth <= 768 ? mobileStyles.li : {}}><Link to="skills" smooth={true} className="nav-link">SKILLS</Link></li>
-        <li style={window.innerWidth <= 768 ? mobileStyles.li : {}}><Link to="contact" smooth={true} className="nav-link">CONTACT</Link></li>
+      <ul className="flex flex-wrap justify-around w-full space-x-6 md:space-x-10 lg:space-x-15 md:flex-row">
+        <li><Link to="aboutMe" smooth={true} className="nav-link">ABOUT ME</Link></li>
+        <li><Link to="currents" smooth={true} className="nav-link">CURRENT FAVORITES</Link></li>
+        <li><Link to="skills" smooth={true} className="nav-link">SKILLS</Link></li>
+        <li><Link to="contact" smooth={true} className="nav-link">CONTACT</Link></li>
       </ul>
     </nav>
   );
