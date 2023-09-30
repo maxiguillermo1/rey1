@@ -61,7 +61,18 @@ const styles = {
     },
     textContainer: {
         textAlign: 'left',
-    }
+    },
+    '@media (max-width: 768px)': {
+      container: {
+          padding: '5%',
+      },
+      imageFrame: {
+          width: '5%'
+      },
+      textInfo: {
+          fontSize: '10px'
+      }
+  }
 };
 
 export default function About() {

@@ -52,6 +52,17 @@ export default function Reyna() {
             color: 'white',
             textShadow: '2px 2px 2px rgba(277,0,137,0.6), -2px -2px 2px rgba(277,0,137,0.6), 2px -2px 2px rgba(277,0,137,0.6), -2px 2px 2px rgba(277,0,137,0.6)',
             marginTop: '10px'
+        },
+        '@media (max-width: 768px)': {
+            container: {
+                padding: '5%',
+            },
+            imageFrame: {
+                width: '5%'
+            },
+            textInfo: {
+                fontSize: '10px'
+            }
         }
     };
 
