@@ -63,16 +63,36 @@ const styles = {
         textAlign: 'left',
     },
     '@media (max-width: 768px)': {
-      container: {
+        container: {
           padding: '5%',
-      },
-      imageFrame: {
-          width: '5%'
-      },
-      textInfo: {
-          fontSize: '10px'
+        },
+        imageFrame: {
+          width: '200px',   // reduced width to fit on smaller screens
+        },
+        textInfo: {
+          fontSize: '8px',  // slightly smaller font size
+        },
+        section: {
+          flexDirection: 'column',   // Stack the image and text vertically
+          alignItems: 'center',
+        },
+        textContainer: {
+          marginTop: '10px',  // Space between the image and text
+        },
+        header: {
+          flexDirection: 'column',
+          paddingBottom: '20px',
+        },
+        h1: {
+          fontSize: '30px',   // reduced font size to fit on smaller screens
+          paddingLeft: '0',
+          paddingRight: '0',
+          paddingTop: '10px',
+        },
+        imageBounce: {
+          width: '40px',   // reduced size to fit on smaller screens
+        }
       }
-  }
 };
 
 export default function About() {
