@@ -22,8 +22,8 @@ export default function Currents() {
                 3px -3px 3px rgba(255,33,156,0.9),
                 -3px 3px 3px rgba(255,33,156,0.9)`,
             textAlign: 'center',
-            paddingLeft: '30px',
-            paddingRight: '30px',
+            paddingLeft: '10px',
+            paddingRight: '10px',
         },
         // ... any other styles you want to modify for mobile can be added here.
     };
