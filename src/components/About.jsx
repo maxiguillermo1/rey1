@@ -20,7 +20,7 @@ const styles = {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    paddingBottom: '50px'
+    paddingBottom: '75px'
   },
   imageBounce: {
     width: '55px',
@@ -38,7 +38,7 @@ const styles = {
     paddingRight: '30px'
   },
   imageFrame: {
-    width: '403px',
+    width: '350px',
     height: 'auto',
     paddingBottom: '20%'
   },
@@ -46,7 +46,7 @@ const styles = {
     fontFamily: 'Crystal, sans-serif',
     fontSize: '12px',
     color: 'white',
-    paddingBottom: '',
+    paddingBottom: '20px',
   },
   //... Additional styles can be added as required
   '@media (max-width: 768px)': {
@@ -95,7 +95,7 @@ export default function About() {
               flexWrap: 'wrap' // Add wrap here
         }}>
           <img src={photoFrame} alt="Description" style={styles.imageFrame} />
-          <div style={{ paddingLeft: '40px', textAlign: 'center', width: '100%' }}>
+          <div style={{ paddingLeft: '90px', textAlign: 'center', width: '100%' }}>
             <p style={styles.textInfo}>
               <InfoBlock img={heartIcon} label="LOCATION:" text="los angeles, california" />
               <InfoBlock img={heartIcon} label="UNIVERSITY:" text="california state university, long beach" />
