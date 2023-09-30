@@ -16,11 +16,11 @@ export default function Reyna() {
             
             alignItems: 'center',
             justifyContent: 'center',
-            gap: '6%'  // Added gap for spacing
+            gap: '0%'  // Added gap for spacing
         },
         h1: {
             fontFamily: 'Protomo, sans-serif',
-            fontSize: '35px',
+            fontSize: '30px',
             color: 'white',
             textShadow: `
                 3px 3px 3px rgba(255,33,156,0.9), 
@@ -29,7 +29,7 @@ export default function Reyna() {
                 -3px 3px 3px rgba(255,33,156,0.9)
             `,
             textAlign: 'center',
-            marginTop: '100px',
+            marginTop: '60px',
         },
         heartContainer: {  // Added this container to hold hearts on the sides
             display: 'flex',
@@ -38,17 +38,20 @@ export default function Reyna() {
            
         },
         imageStyle: {
-            width: '11%',
+            width: '110px',
+            height: 'auto',
+            paddingRight: '7%',
             height: 'auto',
         },
         flippedImageStyle: {
-            width: '11%',
+            width: '110px',
             height: 'auto',
+            paddingRight: '7%',
             transform: 'scaleX(-1)',
         },
         textInfo: {
             fontFamily: 'dogica, sans-serif',
-            fontSize: '11px',
+            fontSize: '12.25px',
             color: 'white',
             textShadow: '2px 2px 2px rgba(277,0,137,0.6), -2px -2px 2px rgba(277,0,137,0.6), 2px -2px 2px rgba(277,0,137,0.6), -2px 2px 2px rgba(277,0,137,0.6)',
             marginTop: '10px'
