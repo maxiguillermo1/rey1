@@ -3,87 +3,88 @@ import 'font-awesome/css/font-awesome.min.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import phoneIcon from '../images/phone-icon.jpg';
 
-const styles = {
-  container: {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center',
-    height: '100vh',
-    width: '100%',
-  },
-  header: {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    paddingBottom: '60px'
-  },
-  phoneIcon: {
-    width: '45px',
-    height: 'auto',
-    animation: 'ringing 0.5s infinite',
-    animationTimingFunction: 'cubic-bezier(0.28, 0.84, 0.42, 1)'
-  },
-  contactTitle: {
-    fontFamily: 'Protomo, sans-serif',
-    fontSize: '40px',
-    color: 'white',
-    paddingLeft: '27px',
-    paddingRight: '27px',
-    
-    textShadow: `
-      3px 3px 3px rgba(255,33,156,0.9), 
-      -3px -3px 3px rgba(255,33,156,0.9), 
-      3px -3px 3px rgba(255,33,156,0.9), 
-      -3px 3px 3px rgba(255,33,156,0.9)`
-  },
-  contactLinksContainer: {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'flex-start', // Aligns the items to the left
-},
-
-contactLink: {
-    display: 'flex',
-    flexDirection: 'row',
-    alignItems: 'center',
-    marginBottom: '20px',
-    width: '100%', // This ensures the link spans the full width of the container
-    animation: 'iconHighlight 1s infinite',
-    animationTimingFunction: 'ease-in-out'
-},
-
-iconStyle: {
-    width: '20px',
-    height: '20px',
-    marginRight: '20px', // Increase right margin to create space between icon and text
-    color: 'white',
-    flexShrink: 0, // This ensures the icon doesn't resize if there's less space
-},
-  contactText: {
-    fontFamily: 'dogica, sans-serif',
-    color: 'white',
-    fontSize: '11px',
-    textShadow: `
-      2px 2px 2px rgba(190, 78, 255, 0.8), 
-      -2px -2px 2px rgba(190, 78, 255, 0.8), 
-      2px -2px 2px rgba(190, 78, 255, 0.8), 
-      -2px 2px 2px rgba(190, 78, 255, 0.8)`
-  },
-  '@media (max-width: 768px)': {
-    container: {
-        padding: '5%',
-    },
-    imageFrame: {
-        width: '5%'
-    },
-    textInfo: {
-        fontSize: '10px'
-    }
-  }
-};
 
 export default function Contact() {
+  
+  const styles = {
+    container: {
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      justifyContent: 'center',
+      height: '100vh',
+      width: '100%',
+    },
+    header: {
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      paddingBottom: '60px'
+    },
+    phoneIcon: {
+      width: '45px',
+      height: 'auto',
+      animation: 'ringing 0.5s infinite',
+      animationTimingFunction: 'cubic-bezier(0.28, 0.84, 0.42, 1)'
+    },
+    contactTitle: {
+      fontFamily: 'Protomo, sans-serif',
+      fontSize: '40px',
+      color: 'white',
+      paddingLeft: '27px',
+      paddingRight: '27px',
+      
+      textShadow: `
+        3px 3px 3px rgba(255,33,156,0.9), 
+        -3px -3px 3px rgba(255,33,156,0.9), 
+        3px -3px 3px rgba(255,33,156,0.9), 
+        -3px 3px 3px rgba(255,33,156,0.9)`
+    },
+    contactLinksContainer: {
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'flex-start', // Aligns the items to the left
+  },
+
+  contactLink: {
+      display: 'flex',
+      flexDirection: 'row',
+      alignItems: 'center',
+      marginBottom: '20px',
+      width: '100%', // This ensures the link spans the full width of the container
+      animation: 'iconHighlight 1s infinite',
+      animationTimingFunction: 'ease-in-out'
+  },
+
+  iconStyle: {
+      width: '20px',
+      height: '20px',
+      marginRight: '20px', // Increase right margin to create space between icon and text
+      color: 'white',
+      flexShrink: 0, // This ensures the icon doesn't resize if there's less space
+  },
+    contactText: {
+      fontFamily: 'dogica, sans-serif',
+      color: 'white',
+      fontSize: '11px',
+      textShadow: `
+        2px 2px 2px rgba(190, 78, 255, 0.8), 
+        -2px -2px 2px rgba(190, 78, 255, 0.8), 
+        2px -2px 2px rgba(190, 78, 255, 0.8), 
+        -2px 2px 2px rgba(190, 78, 255, 0.8)`
+    },
+    '@media (max-width: 768px)': {
+      container: {
+          padding: '5%',
+      },
+      imageFrame: {
+          width: '5%'
+      },
+      textInfo: {
+          fontSize: '10px'
+      }
+    }
+  };
   return (
     <div id="contact" style={styles.container}>
       <div style={styles.header}>
