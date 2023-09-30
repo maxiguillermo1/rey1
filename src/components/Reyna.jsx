@@ -22,7 +22,7 @@ export default function Reyna() {
         },
         textInfo: {
             fontFamily: 'dogica, sans-serif',
-            fontSize: '2px',
+            fontSize: '6px',
             color: 'white',
             textShadow: '2px 2px 2px rgba(277,0,137,0.6), -2px -2px 2px rgba(277,0,137,0.6), 2px -2px 2px rgba(277,0,137,0.6), -2px 2px 2px rgba(277,0,137,0.6)',
             marginTop: '10px'
