@@ -14,7 +14,7 @@ const styles = {
         padding: '10%',
         boxSizing: 'border-box',
         overflowX: 'hidden',
-        backgroundColor: '#A1EAFB'  // Light blue background to match the visual
+       
     },
     header: {
         display: 'flex',
