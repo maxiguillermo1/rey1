@@ -16,7 +16,7 @@ const navStyles = {
     -2px 2px 2px rgba(255,33,156,0.7)
   `,
   '@media (max-width: 768px)': {
-    fontSize: '15px',
+    fontSize: '1px',
   }
 };
 

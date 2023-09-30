@@ -62,6 +62,8 @@ export default function Skills() {
                 -2px 2px 2px rgba(0, 181, 195, 0.7)
             `,
         },
+        
+        
     };
 
     return (
