@@ -62,6 +62,17 @@ export default function Skills() {
                 -2px 2px 2px rgba(0, 181, 195, 0.7)
             `,
         },
+        '@media (max-width: 768px)': {
+            container: {
+                padding: '5%',
+            },
+            imageFrame: {
+                width: '5%'
+            },
+            textInfo: {
+                fontSize: '10px'
+            }
+        }
         
         
     };

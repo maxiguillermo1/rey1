@@ -97,20 +97,14 @@ export default function Currents() {
             display: 'inline',
         },
         '@media (max-width: 768px)': {
-            h1: {
-                fontSize: '32px'
+            container: {
+                padding: '5%',
             },
-            p: {
-                fontSize: '11px'
+            imageFrame: {
+                width: '5%'
             },
-            icon: {
-                width: '60px'
-            },
-            activity: {
-                fontSize: '13px'
-            },
-            activityText: {
-                fontSize: '11px'
+            textInfo: {
+                fontSize: '10px'
             }
         }
     };

@@ -54,16 +54,16 @@ const styles = {
       -2px 2px 2px rgba(190, 78, 255, 0.8)`
   },
   '@media (max-width: 768px)': {
-    contactLink: {
-      marginBottom: '15px'
+    container: {
+        padding: '5%',
     },
-    contactText: {
-      fontSize: '10px'
+    imageFrame: {
+        width: '5%'
     },
-    phoneIcon: {
-      width: '35px'
+    textInfo: {
+        fontSize: '10px'
     }
-  }
+}
 };
 
 export default function Contact() {
