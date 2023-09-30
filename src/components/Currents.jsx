@@ -5,6 +5,21 @@ import pinkBearIcon from '../images/pink-bear.jpg';
 import ipodIcon from '../images/ipod-icon.jpg';
 import desertIcon from '../images/desert-icon.jpg';
 
+
+
+const isMobile = window.innerWidth <= 768;
+
+const mobileStyles = {
+    h1: {
+        fontSize: '30px',  // You can adjust this value if needed
+        paddingLeft: '10px', // Reduce padding for mobile
+        paddingRight: '10px',
+    },
+    container: {
+        padding: '5%', // Reduced padding for mobile
+    }
+};
+
 const styles = {
     container: {
         display: 'flex',
@@ -146,12 +161,11 @@ const styles = {
     },
 };
 
-export default function Currents() {
-    return (
-        <div id="currents" style={styles.container}>
-            <div style={styles.header}>
-                <h1 style={styles.h1}>CURRENT FAVORITES</h1>
-            </div>
+return (
+    <div id="currents" style={isMobile ? mobileStyles.container : styles.container}>
+        <div style={styles.header}>
+            <h1 style={isMobile ? mobileStyles.h1 : styles.h1}>CURRENT FAVORITES</h1>
+        </div>
             <p style={styles.p}>
                 <i className="far fa-heart"></i> &nbsp; &nbsp;fall 2023 &nbsp; &nbsp;<i className="far fa-heart"></i>
             </p>
@@ -189,4 +203,4 @@ export default function Currents() {
             </section>
         </div>
     );
-}
+

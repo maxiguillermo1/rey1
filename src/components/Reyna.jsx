@@ -22,17 +22,19 @@ export default function Reyna() {
         },
         textInfo: {
             fontFamily: 'dogica, sans-serif',
-            fontSize: '6px',
+            fontSize: '12.25px',
             color: 'white',
             textShadow: '2px 2px 2px rgba(277,0,137,0.6), -2px -2px 2px rgba(277,0,137,0.6), 2px -2px 2px rgba(277,0,137,0.6), -2px 2px 2px rgba(277,0,137,0.6)',
             marginTop: '10px'
         },
         imageStyle: {
             width: '60px',
+            paddingRight: '7%',
         },
         flippedImageStyle: {
             width: '60px',
             transform: 'scaleX(-1)',
+            paddingRight: '7%',
         }
     };
 

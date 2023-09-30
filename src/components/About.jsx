@@ -13,6 +13,8 @@ const mobileStyles = {
       paddingLeft: '0',
       paddingRight: '0',
       paddingTop: '10px',
+      flexDirection: 'column',
+
     },
     textInfo: {
       fontSize: '6px',
@@ -29,7 +31,7 @@ const mobileStyles = {
       paddingBottom: '20px',
     },
     h1: {
-      fontSize: '30px',
+      fontSize: '40px',
       paddingLeft: '0',
       paddingRight: '0',
       paddingTop: '10px',
