@@ -17,11 +17,12 @@ export default function Reyna() {
                 -3px 3px 3px rgba(255,33,156,0.9)
             `,
             textAlign: 'center',
+            marginTop: '60px',
 
         },
         textInfo: {
             fontFamily: 'dogica, sans-serif',
-            fontSize: '12.25px',
+            fontSize: '6px',
             color: 'white',
             textShadow: '2px 2px 2px rgba(277,0,137,0.6), -2px -2px 2px rgba(277,0,137,0.6), 2px -2px 2px rgba(277,0,137,0.6), -2px 2px 2px rgba(277,0,137,0.6)',
             marginTop: '10px'
