@@ -64,12 +64,6 @@ const styles = {
 
 };
 
-const headerAndImageStyles = {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center'
-};
 
 
 export default function About() {

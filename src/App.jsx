@@ -15,14 +15,13 @@ function App() {
 
   return (
     <div className="app-container">
-  <Nav />
-  <div className="content">
+    <Nav />
     <Reyna />
     <About />
     <Currents />
     <Skills />
     <Contact />
-  </div>
+  
 </div>
 
   );
