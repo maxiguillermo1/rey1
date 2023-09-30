@@ -10,7 +10,9 @@ const mobileStyles = {
     },
     imageFrame: {
       width: '200px',
-      flexDirection: 'column',
+      paddingLeft: '0',
+      paddingRight: '0',
+      paddingTop: '10px',
     },
     textInfo: {
       fontSize: '6px',
@@ -144,6 +146,7 @@ export default function About() {
                     <InfoBlock img={heartIcon} label="UNIVERSITY:" text="california state university, long beach" />
                     <InfoBlock img={heartIcon} label="DEGREE:" text="b.s. in computer science" />
                     <InfoBlock img={heartIcon} label="LEADERSHIP:" text="recruitment membership chair of w.i.c." />
+                    <InfoBlock img={heartIcon} label="PROGRAM:" text="break through tech ai at ucla site" />
                 </div>
             </section>
         </div>
