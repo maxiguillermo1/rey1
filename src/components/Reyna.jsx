@@ -8,6 +8,23 @@ export default function Reyna() {
         h1: {
             fontSize: '20px',
             marginTop: '30px',
+            fontFamily: 'Protomo, sans-serif',
+            color: 'white',
+            textShadow: `
+                3px 3px 3px rgba(255,33,156,0.9), 
+                -3px -3px 3px rgba(255,33,156,0.9), 
+                3px -3px 3px rgba(255,33,156,0.9), 
+                -3px 3px 3px rgba(255,33,156,0.9)
+            `,
+            textAlign: 'center',
+
+        },
+        textInfo: {
+            fontFamily: 'dogica, sans-serif',
+            fontSize: '12.25px',
+            color: 'white',
+            textShadow: '2px 2px 2px rgba(277,0,137,0.6), -2px -2px 2px rgba(277,0,137,0.6), 2px -2px 2px rgba(277,0,137,0.6), -2px 2px 2px rgba(277,0,137,0.6)',
+            marginTop: '10px'
         },
         imageStyle: {
             width: '60px',
@@ -17,6 +34,7 @@ export default function Reyna() {
             transform: 'scaleX(-1)',
         }
     };
+
 
     const styles = {
         container: {
@@ -92,7 +110,7 @@ export default function Reyna() {
                 <h1 style={isMobile ? mobileStyles.h1 : styles.h1}>REYNA AGUIRRE OKAMUNE</h1>
                 <img src={heart} alt="heart" style={isMobile ? mobileStyles.flippedImageStyle : styles.flippedImageStyle} />
             </div>
-            <p style={styles.textInfo}>aspiring software engineer</p>
+            <p style={isMobile ? mobileStyles.textInfo : styles.textInfo}>aspiring software engineer</p>
         </div>
     );
 }
