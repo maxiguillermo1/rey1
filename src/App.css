@@ -156,19 +156,4 @@ body, html {
 }
 
 
-/* Adjust padding for larger screens */
-@media (min-width: 768px) {
-  .container {
-    padding-left: 8rem;
-    padding-right: 16rem;
-  }
-}
 
-
-
-/* Styles for devices with max-width of 768px (typically tablets and phones) */
-@media (max-width: 768px) {
-  .content {
-      flex-direction: column;
-  }
-}

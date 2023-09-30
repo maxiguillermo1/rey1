@@ -49,15 +49,7 @@ const styles = {
     paddingBottom: '20px',
   },
   //... Additional styles can be added as required
-  '@media (max-width: 768px)': {
-    imageFrame: {
-      width: '220px'
-    },
-    textInfo: {
-      fontSize: '10px'
-    }
-    
-  },
+  
   '@media (max-width: 768px)': {
     container: {
         padding: '5%',
