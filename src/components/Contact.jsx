@@ -30,20 +30,37 @@ const styles = {
     color: 'white',
     paddingLeft: '27px',
     paddingRight: '27px',
+    
     textShadow: `
       3px 3px 3px rgba(255,33,156,0.9), 
       -3px -3px 3px rgba(255,33,156,0.9), 
       3px -3px 3px rgba(255,33,156,0.9), 
       -3px 3px 3px rgba(255,33,156,0.9)`
   },
-  contactLink: {
+  contactLinksContainer: {
     display: 'flex',
-    justifyContent: 'center',
+    flexDirection: 'column',
+    alignItems: 'flex-start', // Aligns the items to the left
+},
+
+contactLink: {
+    display: 'flex',
+    flexDirection: 'row',
     alignItems: 'center',
-    marginBottom: '20px'
-  },
+    marginBottom: '20px',
+    width: '100%', // This ensures the link spans the full width of the container
+    animation: 'iconHighlight 1s infinite',
+    animationTimingFunction: 'ease-in-out'
+},
+
+iconStyle: {
+    width: '20px',
+    height: '20px',
+    marginRight: '20px', // Increase right margin to create space between icon and text
+    color: 'white',
+    flexShrink: 0, // This ensures the icon doesn't resize if there's less space
+},
   contactText: {
-    marginLeft: '10px',
     fontFamily: 'dogica, sans-serif',
     color: 'white',
     fontSize: '11px',
@@ -63,30 +80,10 @@ const styles = {
     textInfo: {
         fontSize: '10px'
     }
-}
+  }
 };
 
 export default function Contact() {
-  const contactLinkStyle = {
-    display: 'flex',
-    alignItems: 'center',
-    marginBottom: '20px',
-    animation: 'iconHighlight 1s infinite',
-    animationTimingFunction: 'ease-in-out'
-  };
-
-  const iconStyle = {
-    width: '20px',
-    marginRight: '10px'
-  };
-
-  const textStyle = {
-    fontFamily: 'dogica, sans-serif',
-    color: 'white',
-    fontSize: '11px',
-    textShadow: '2px 2px 2px rgba(190, 78, 255, 0.8), -2px -2px 2px rgba(190, 78, 255, 0.8), 2px -2px 2px rgba(190, 78, 255, 0.8), -2px 2px 2px rgba(190, 78, 255, 0.8)'
-  };
-
   return (
     <div id="contact" style={styles.container}>
       <div style={styles.header}>
@@ -104,38 +101,38 @@ export default function Contact() {
       </div>
 
       <div style={styles.contactLinksContainer}>
-        <div style={contactLinkStyle}>
-          <a href="https://www.linkedin.com/in/reyna-aguirre-okamune/" target="_blank" rel="noopener noreferrer">
-            <i className="fab fa-linkedin"style={{ ...iconStyle, color: 'white' }}></i>
-            <span style={textStyle}>@reyna-aguirre-okamune</span>
+        <div style={styles.contactLink}>
+          <i className="fab fa-linkedin" style={styles.iconStyle}></i>
+          <a href="https://www.linkedin.com/in/reyna-aguirre-okamune/" target="_blank" rel="noopener noreferrer" style={styles.contactText}>
+            @reyna-aguirre-okamune
           </a>
         </div>
 
-        <div style={contactLinkStyle}>
-          <a href="https://github.com/reyna-okamune" target="_blank" rel="noopener noreferrer">
-            <i className="fab fa-github icon-glow" style={{ ...iconStyle, color: 'white' }}></i>
-            <span style={textStyle}>@reyna-okamune</span>
+        <div style={styles.contactLink}>
+          <i className="fab fa-github icon-glow" style={styles.iconStyle}></i>
+          <a href="https://github.com/reyna-okamune" target="_blank" rel="noopener noreferrer" style={styles.contactText}>
+            @reyna-okamune
           </a>
         </div>
 
-        <div style={contactLinkStyle}>
-          <a href="https://discord.com/users/rey-chan" target="_blank" rel="noopener noreferrer">
-            <i className="fab fa-discord" style={{ ...iconStyle, color: 'white' }}></i>
-            <span style={textStyle}>@rey-chan</span>
+        <div style={styles.contactLink}>
+          <i className="fab fa-discord" style={styles.iconStyle}></i>
+          <a href="https://discord.com/users/rey-chan" target="_blank" rel="noopener noreferrer" style={styles.contactText}>
+            @rey-chan
           </a>
         </div>
 
-        <div style={contactLinkStyle}>
-          <a href="https://www.instagram.com/reynaaguirre/?hl=en" target="_blank" rel="noopener noreferrer">
-            <i className="fab fa-instagram" style={{ ...iconStyle, color: 'white' }}></i>
-            <span style={textStyle}>@reynaaguirre</span>
+        <div style={styles.contactLink}>
+          <i className="fab fa-instagram" style={styles.iconStyle}></i>
+          <a href="https://www.instagram.com/reynaaguirre/?hl=en" target="_blank" rel="noopener noreferrer" style={styles.contactText}>
+            @reynaaguirre
           </a>
         </div>
 
-        <div style={contactLinkStyle}>
-          <a href="mailto:reynaoaguirre@gmail.com" target="_blank" rel="noopener noreferrer">
-            <i className="fas fa-envelope" style={{ ...iconStyle, color: 'white' }}></i>
-            <span style={textStyle}>reynaoaguirre@gmail.com</span>
+        <div style={styles.contactLink}>
+          <i className="fas fa-envelope" style={styles.iconStyle}></i>
+          <a href="mailto:reynaoaguirre@gmail.com" target="_blank" rel="noopener noreferrer" style={styles.contactText}>
+            reynaoaguirre@gmail.com
           </a>
         </div>
       </div>
