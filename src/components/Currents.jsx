@@ -9,7 +9,15 @@ const isMobile = window.innerWidth <= 768;
 
 const mobileStyles = {
     h1: {
+        fontFamily: 'Protomo, sans-serif',
         fontSize: '20px',
+        color: 'white',
+        textShadow: `
+            3px 3px 3px rgba(255,33,156,0.9),
+            -3px -3px 3px rgba(255,33,156,0.9),
+            3px -3px 3px rgba(255,33,156,0.9),
+            -3px 3px 3px rgba(255,33,156,0.9)`,
+        textAlign: 'center',
         paddingLeft: '10px',
         paddingRight: '10px',
     },

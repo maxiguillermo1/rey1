@@ -29,12 +29,12 @@ export default function Reyna() {
         },
         imageStyle: {
             width: '60px',
-            paddingRight: '7%',
+            
         },
         flippedImageStyle: {
             width: '60px',
             transform: 'scaleX(-1)',
-            paddingRight: '7%',
+            
         }
     };
 
