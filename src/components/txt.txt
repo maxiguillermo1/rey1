@@ -1,0 +1,30 @@
+
+
+export default function About() {
+    return (
+      <div id="aboutMe" style={styles.container}>
+        <div style={styles.header}>
+          <img src={powerpuffMe} alt="me" style={styles.imageBounce} />
+          <h1 style={styles.h1}>ABOUT ME</h1>
+        </div>
+        <div style={{ 
+              display: 'flex', 
+              flexDirection: 'column',
+              justifyContent: 'center', 
+              alignItems: 'center', 
+              flexWrap: 'wrap' // Add wrap here
+        }}>
+          <img src={photoFrame} alt="Description" style={styles.imageFrame} />
+          <div style={{ paddingLeft: '90px', textAlign: 'center', width: '100%' }}>
+            <p style={styles.textInfo}>
+              <InfoBlock img={heartIcon} label="LOCATION:" text="los angeles, california" />
+              <InfoBlock img={heartIcon} label="UNIVERSITY:" text="california state university, long beach" />
+              <InfoBlock img={heartIcon} label="DEGREE:" text="b.s. in computer science" />
+              <InfoBlock img={heartIcon} label="LEADERSHIP:" text="recruitment membership chair of w.i.c." />
+            </p>
+          </div>
+        </div>
+      </div>
+    );
+  }
+  

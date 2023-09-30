@@ -1,6 +1,5 @@
 import React from 'react';
 import powerpuffMe from '../images/powerpuff-me-2.jpg';
-import photoFrame from '../images/photo-booth.jpg';
 import heartIcon from '../images/heart-icon.jpg';
 import 'font-awesome/css/font-awesome.min.css';
 
@@ -10,111 +9,90 @@ const styles = {
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
-        minHeight: '100vh', // Use minHeight instead of height
-        width: '100%', // Add width: 100% to span the entire viewport
-        padding: '10%', // Adjust padding as needed
+        minHeight: '100vh',
+        width: '100%',
+        padding: '10%',
         boxSizing: 'border-box',
         overflowX: 'hidden',
-      },
-  header: {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    paddingBottom: '75px'
-  },
-  imageBounce: {
-    width: '55px',
-    height: 'auto',
-    animation: 'bounce 2s infinite',
-    animationTimingFunction: 'cubic-bezier(0.28, 0.84, 0.42, 1)'
-  },
-  h1: {
-    fontFamily: 'Protomo, sans-serif',
-    fontSize: '40px',
-    color: 'white',
-    textShadow: '3px 3px 3px rgba(255,33,156,0.9), -3px -3px 3px rgba(255,33,156,0.9), 3px -3px 3px rgba(255,33,156,0.9), -3px 3px 3px rgba(255,33,156,0.9)',
-    textAlign: 'center',
-    paddingLeft: '30px',
-    paddingRight: '30px'
-  },
-  imageFrame: {
-    width: '350px',
-    height: 'auto',
-    paddingBottom: '20%'
-  },
-  textInfo: {
-    fontFamily: 'Crystal, sans-serif',
-    fontSize: '12px',
-    color: 'white',
-    paddingBottom: '20px',
-  },
-  //... Additional styles can be added as required
-  
-  '@media (max-width: 768px)': {
-    container: {
-        padding: '5%',
+        backgroundColor: '#A1EAFB'  // Light blue background to match the visual
     },
-    imageFrame: {
-        width: '5%'
+    header: {
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        flexDirection: 'column',
+        paddingBottom: '50px'
     },
-    textInfo: {
-        fontSize: '10px'
-    }
-}
-
-};
-
-
-
-export default function About() {
-    return (
-      <div id="aboutMe" style={styles.container}>
-        <div style={styles.header}>
-          <img src={powerpuffMe} alt="me" style={styles.imageBounce} />
-          <h1 style={styles.h1}>ABOUT ME</h1>
-        </div>
-        <div style={{ 
-              display: 'flex', 
-              flexDirection: 'column',
-              justifyContent: 'center', 
-              alignItems: 'center', 
-              flexWrap: 'wrap' // Add wrap here
-        }}>
-          <img src={photoFrame} alt="Description" style={styles.imageFrame} />
-          <div style={{ paddingLeft: '90px', textAlign: 'center', width: '100%' }}>
-            <p style={styles.textInfo}>
-              <InfoBlock img={heartIcon} label="LOCATION:" text="los angeles, california" />
-              <InfoBlock img={heartIcon} label="UNIVERSITY:" text="california state university, long beach" />
-              <InfoBlock img={heartIcon} label="DEGREE:" text="b.s. in computer science" />
-              <InfoBlock img={heartIcon} label="LEADERSHIP:" text="recruitment membership chair of w.i.c." />
-            </p>
-          </div>
-        </div>
-      </div>
-    );
-  }
-  
-
-function InfoBlock({ img, label, text }) {
-  return (
-    <div style={{ display: 'flex', alignItems: 'center', marginBottom: '20px' }}>
-      <img src={img} alt="Icon" style={{ width: '25px', height: '20px',  animation: 'pulse 1s infinite' }} />
-      <span style={{ 
+    imageBounce: {
+        width: '55px',
+        height: 'auto',
+        animation: 'bounce 2s infinite',
+        animationTimingFunction: 'cubic-bezier(0.28, 0.84, 0.42, 1)',
+        marginBottom: '20px'
+    },
+    h1: {
+        fontFamily: 'Protomo, sans-serif',
+        fontSize: '40px',
+        color: 'white',
+        textShadow: '3px 3px 3px rgba(255,33,156,0.9), -3px -3px 3px rgba(255,33,156,0.9), 3px -3px 3px rgba(255,33,156,0.9), -3px 3px 3px rgba(255,33,156,0.9)',
+        textAlign: 'center',
+    },
+    infoItem: {
+        display: 'flex',
+        alignItems: 'center',
+        marginBottom: '20px'
+    },
+    infoIcon: {
+        width: '25px',
+        height: '20px',
+        animation: 'pulse 1s infinite',
+        marginRight: '15px'
+    },
+    infoLabel: {
         fontFamily: 'dogica, sans-serif',
         textShadow: '2px 2px 2px rgba(255,33,156,0.7), -2px -2px 2px rgba(255,33,156,0.7), 2px -2px 2px rgba(255,33,156,0.7), -2px 2px 2px rgba(255,33,156,0.7)',
-        
-        paddingLeft: '15px',
-        paddingRight: '15px'
-      }}>
-        {label}
-      </span>
-      <span style={{ 
+    },
+    infoText: {
         fontFamily: 'dogica, sans-serif',
         textShadow: '2px 2px 2px rgba(0, 181, 195, 0.7), -2px -2px 2px rgba(0, 181, 195, 0.7), 2px -2px 2px rgba(0, 181, 195, 0.7), -2px 2px 2px rgba(0, 181, 195, 0.7)',
         fontSize: '10px'
-      }}>
-        {text}
-      </span>
-    </div>
-  );
+    }
+};
+
+export default function About() {
+    return (
+        <div id="aboutMe" style={styles.container}>
+            <div style={styles.header}>
+                <img src={powerpuffMe} alt="me" style={styles.imageBounce} />
+                <h1 style={styles.h1}>ABOUT ME</h1>
+            </div>
+            <div style={{ 
+                  display: 'flex', 
+                  flexDirection: 'column',
+                  justifyContent: 'center', 
+                  alignItems: 'center'
+            }}>
+                <div style={styles.infoItem}>
+                    <img src={heartIcon} alt="Icon" style={styles.infoIcon} />
+                    <span style={styles.infoLabel}>LOCATION:</span>
+                    <span style={styles.infoText}> los angeles, california</span>
+                </div>
+                <div style={styles.infoItem}>
+                    <img src={heartIcon} alt="Icon" style={styles.infoIcon} />
+                    <span style={styles.infoLabel}>UNIVERSITY:</span>
+                    <span style={styles.infoText}> california state university, long beach</span>
+                </div>
+                <div style={styles.infoItem}>
+                    <img src={heartIcon} alt="Icon" style={styles.infoIcon} />
+                    <span style={styles.infoLabel}>DEGREE:</span>
+                    <span style={styles.infoText}> b.s. in computer science</span>
+                </div>
+                <div style={styles.infoItem}>
+                    <img src={heartIcon} alt="Icon" style={styles.infoIcon} />
+                    <span style={styles.infoLabel}>LEADERSHIP:</span>
+                    <span style={styles.infoText}> recruitment membership chair of w.i.c.</span>
+                </div>
+            </div>
+        </div>
+    );
 }
