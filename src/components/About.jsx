@@ -10,9 +10,10 @@ const mobileStyles = {
     },
     imageFrame: {
       width: '200px',
+      flexDirection: 'column',
     },
     textInfo: {
-      fontSize: '8px',
+      fontSize: '6px',
     },
     section: {
       flexDirection: 'column',
