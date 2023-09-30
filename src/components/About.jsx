@@ -40,7 +40,7 @@ const styles = {
   imageFrame: {
     width: '403px',
     height: 'auto',
-    paddingBottom: '45px'
+    paddingBottom: '20%'
   },
   textInfo: {
     fontFamily: 'Crystal, sans-serif',
@@ -89,6 +89,7 @@ export default function About() {
         </div>
         <div style={{ 
               display: 'flex', 
+              flexDirection: 'column',
               justifyContent: 'center', 
               alignItems: 'center', 
               flexWrap: 'wrap' // Add wrap here

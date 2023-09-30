@@ -1,5 +1,6 @@
 /* Reset default margin and padding for the whole page */
 /* Reset default margin and padding for the whole page */
+
 body, html {
   margin: 0;
   padding: 0;
@@ -163,11 +164,7 @@ body, html {
   }
 }
 
-/* Default styles for desktop */
-.content {
-  display: flex;
-  flex-direction: row;
-}
+
 
 /* Styles for devices with max-width of 768px (typically tablets and phones) */
 @media (max-width: 768px) {
