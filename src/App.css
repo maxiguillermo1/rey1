@@ -163,14 +163,15 @@ body, html {
   }
 }
 
-'@media (max-width: 768px)': {
-  container: {
-      padding: '5%',
-  },
-  imageFrame: {
-      width: '220px'
-  },
-  textInfo: {
-      fontSize: '10px'
+/* Default styles for desktop */
+.content {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Styles for devices with max-width of 768px (typically tablets and phones) */
+@media (max-width: 768px) {
+  .content {
+      flex-direction: column;
   }
 }
