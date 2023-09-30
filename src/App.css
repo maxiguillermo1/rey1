@@ -162,3 +162,15 @@ body, html {
     padding-right: 16rem;
   }
 }
+
+'@media (max-width: 768px)': {
+  container: {
+      padding: '5%',
+  },
+  imageFrame: {
+      width: '220px'
+  },
+  textInfo: {
+      fontSize: '10px'
+  }
+}

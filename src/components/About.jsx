@@ -20,7 +20,7 @@ const styles = {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    paddingBottom: '75px'
+    paddingBottom: '50px'
   },
   imageBounce: {
     width: '55px',
@@ -38,13 +38,15 @@ const styles = {
     paddingRight: '30px'
   },
   imageFrame: {
-    width: '300px',
-    height: 'auto'
+    width: '403px',
+    height: 'auto',
+    paddingBottom: '45px'
   },
   textInfo: {
     fontFamily: 'Crystal, sans-serif',
     fontSize: '12px',
-    color: 'white'
+    color: 'white',
+    paddingBottom: '',
   },
   //... Additional styles can be added as required
   '@media (max-width: 768px)': {
@@ -54,31 +56,57 @@ const styles = {
     textInfo: {
       fontSize: '10px'
     }
-  }
+    
+  },
+  '@media (max-width: 768px)': {
+    container: {
+        padding: '5%',
+    },
+    imageFrame: {
+        width: '30%'
+    },
+    textInfo: {
+        fontSize: '10px'
+    }
+}
+
 };
 
+const headerAndImageStyles = {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center'
+};
+
+
 export default function About() {
-  return (
-    <div id="aboutMe" style={styles.container}>
-      <div style={styles.header}>
-        <img src={powerpuffMe} alt="me" style={styles.imageBounce} />
-        <h1 style={styles.h1}>ABOUT ME</h1>
-      </div>
-      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-        <img src={photoFrame} alt="Description" style={styles.imageFrame} />
-        <div style={{ paddingLeft: '40px' }}>
-          <p style={styles.textInfo}>
-            <InfoBlock img={heartIcon} label="LOCATION:" text="los angeles, california" />
-            <InfoBlock img={heartIcon} label="UNIVERSITY:" text="california state university, long beach" />
-            <InfoBlock img={heartIcon} label="DEGREE:" text="b.s. in computer science" />
-            <InfoBlock img={heartIcon} label="LEADERSHIP:" text="recruitment membership chair of w.i.c." />
-            {/* ... More InfoBlocks as needed */}
-          </p>
+    return (
+      <div id="aboutMe" style={styles.container}>
+        <div style={styles.header}>
+          <img src={powerpuffMe} alt="me" style={styles.imageBounce} />
+          <h1 style={styles.h1}>ABOUT ME</h1>
+        </div>
+        <div style={{ 
+              display: 'flex', 
+              justifyContent: 'center', 
+              alignItems: 'center', 
+              flexWrap: 'wrap' // Add wrap here
+        }}>
+          <img src={photoFrame} alt="Description" style={styles.imageFrame} />
+          <div style={{ paddingLeft: '40px', textAlign: 'center', width: '100%' }}>
+            <p style={styles.textInfo}>
+              <InfoBlock img={heartIcon} label="LOCATION:" text="los angeles, california" />
+              <InfoBlock img={heartIcon} label="UNIVERSITY:" text="california state university, long beach" />
+              <InfoBlock img={heartIcon} label="DEGREE:" text="b.s. in computer science" />
+              <InfoBlock img={heartIcon} label="LEADERSHIP:" text="recruitment membership chair of w.i.c." />
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-  );
-}
+    );
+  }
+  
 
 function InfoBlock({ img, label, text }) {
   return (
@@ -87,6 +115,7 @@ function InfoBlock({ img, label, text }) {
       <span style={{ 
         fontFamily: 'dogica, sans-serif',
         textShadow: '2px 2px 2px rgba(255,33,156,0.7), -2px -2px 2px rgba(255,33,156,0.7), 2px -2px 2px rgba(255,33,156,0.7), -2px 2px 2px rgba(255,33,156,0.7)',
+        
         paddingLeft: '15px',
         paddingRight: '15px'
       }}>
