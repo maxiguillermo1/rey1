@@ -5,14 +5,16 @@ import pinkBearIcon from '../images/pink-bear.jpg';
 import ipodIcon from '../images/ipod-icon.jpg';
 import desertIcon from '../images/desert-icon.jpg';
 
+const isMobile = window.innerWidth <= 768;
 
-const [isMobile, setIsMobile] = React.useState(window.innerWidth <= 768);
-
-React.useEffect(() => {
-  const handleResize = () => setIsMobile(window.innerWidth <= 768);
-  window.addEventListener('resize', handleResize);
-  return () => window.removeEventListener('resize', handleResize);
-}, []);
+const mobileStyles = {
+    h1: {
+        fontSize: '20px',
+        paddingLeft: '10px',
+        paddingRight: '10px',
+    },
+    // ... any other styles you want to modify for mobile can be added here.
+};
 
 
 const styles = {
@@ -34,7 +36,7 @@ const styles = {
     },
     h1: {
         fontFamily: 'Protomo, sans-serif',
-        fontSize: isMobile ? '20px' : '40px', // smaller font size for mobile
+        fontSize: '40px',
         color: 'white',
         textShadow: `
             3px 3px 3px rgba(255,33,156,0.9),
@@ -158,9 +160,9 @@ const styles = {
 
 export default function Currents() {
     return (
-        <div id="currents" style={styles.container}>
+        <div style={styles.container}>
             <div style={styles.header}>
-                <h1 style={styles.h1}>CURRENT FAVORITES</h1>
+                <h1 style={isMobile ? mobileStyles.h1 : styles.h1}>CURRENT FAVORITES</h1>
             </div>
             <p style={styles.p}>
                 <i className="far fa-heart"></i> &nbsp; &nbsp;fall 2023 &nbsp; &nbsp;<i className="far fa-heart"></i>
