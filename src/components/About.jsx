@@ -63,7 +63,7 @@ const styles = {
         padding: '5%',
     },
     imageFrame: {
-        width: '30%'
+        width: '5%'
     },
     textInfo: {
         fontSize: '10px'
