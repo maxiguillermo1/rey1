@@ -7,7 +7,7 @@ const navStyles = {
   zIndex: 1000,
   width: '100%',
   fontFamily: 'Protomo, sans-serif',
-  fontSize: '20px',
+  fontSize: '22.5px',
   color: 'white',
   textShadow: `
     2px 2px 2px rgba(255,33,156,0.7),
