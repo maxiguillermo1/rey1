@@ -1,5 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from 'react-scroll';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+
 
 const navStyles = {
   position: 'sticky',
@@ -20,23 +23,44 @@ const navStyles = {
 const mobileStyles = {
   fontSize: '7px',
   ul: {
-    flexDirection: 'row',
-    overflowX: 'auto'
+    flexDirection: 'column', // Stack items vertically for the dropdown
+    position: 'absolute',   // Position it above everything else
+    top: '50px',            // Push it down below the nav bar
+    right: '10px',          // Optional: position it on the right side
+    backgroundColor: '#333',// A background color to differentiate the dropdown
+    padding: '10px',
+    borderRadius: '5px'
   },
   li: {
-    marginBottom: '0'
+    marginBottom: '10px'
   }
 };
 
 export default function Nav() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <nav style={navStyles} className="flex justify-center items-center p-10">
-      <ul style={window.innerWidth <= 768 ? mobileStyles.ul : {}} className="flex space-x-10 space-y-0 md:space-x-15 md:space-y-0 md:flex-row">
-        <li style={window.innerWidth <= 768 ? mobileStyles.li : {}}><Link to="aboutMe" smooth={true} className="nav-link">ABOUT ME</Link></li>
-        <li style={window.innerWidth <= 768 ? mobileStyles.li : {}}><Link to="currents" smooth={true} className="nav-link">CURRENT FAVORITES</Link></li>
-        <li style={window.innerWidth <= 768 ? mobileStyles.li : {}}><Link to="skills" smooth={true} className="nav-link">SKILLS</Link></li>
-        <li style={window.innerWidth <= 768 ? mobileStyles.li : {}}><Link to="contact" smooth={true} className="nav-link">CONTACT</Link></li>
-      </ul>
+      {window.innerWidth <= 768 ? (
+        <>
+          <i className="fas fa-bars" onClick={() => setMenuOpen(!menuOpen)}></i>
+          {menuOpen && (
+            <ul style={mobileStyles.ul} className="flex space-x-10 space-y-0 md:space-x-15 md:space-y-0 md:flex-row">
+              <li style={mobileStyles.li}><Link to="aboutMe" smooth={true} className="nav-link" onClick={() => setMenuOpen(false)}>ABOUT ME</Link></li>
+              <li style={mobileStyles.li}><Link to="currents" smooth={true} className="nav-link" onClick={() => setMenuOpen(false)}>CURRENT FAVORITES</Link></li>
+              <li style={mobileStyles.li}><Link to="skills" smooth={true} className="nav-link" onClick={() => setMenuOpen(false)}>SKILLS</Link></li>
+              <li style={mobileStyles.li}><Link to="contact" smooth={true} className="nav-link" onClick={() => setMenuOpen(false)}>CONTACT</Link></li>
+            </ul>
+          )}
+        </>
+      ) : (
+        <ul className="flex space-x-10 space-y-0 md:space-x-15 md:space-y-0 md:flex-row">
+          <li><Link to="aboutMe" smooth={true} className="nav-link">ABOUT ME</Link></li>
+          <li><Link to="currents" smooth={true} className="nav-link">CURRENT FAVORITES</Link></li>
+          <li><Link to="skills" smooth={true} className="nav-link">SKILLS</Link></li>
+          <li><Link to="contact" smooth={true} className="nav-link">CONTACT</Link></li>
+        </ul>
+      )}
     </nav>
   );
 }
