@@ -4,6 +4,38 @@ import photoFrame from '../images/photo-booth.jpg';
 import heartIcon from '../images/heart-icon.jpg';
 import 'font-awesome/css/font-awesome.min.css';
 
+const mobileStyles = {
+    container: {
+      padding: '5%',
+    },
+    imageFrame: {
+      width: '200px',
+    },
+    textInfo: {
+      fontSize: '8px',
+    },
+    section: {
+      flexDirection: 'column',
+      alignItems: 'center',
+    },
+    textContainer: {
+      marginTop: '10px',
+    },
+    header: {
+      flexDirection: 'column',
+      paddingBottom: '20px',
+    },
+    h1: {
+      fontSize: '30px',
+      paddingLeft: '0',
+      paddingRight: '0',
+      paddingTop: '10px',
+    },
+    imageBounce: {
+      width: '40px',
+    }
+};
+
 const styles = {
     container: {
         display: 'flex',
@@ -96,15 +128,17 @@ const styles = {
 };
 
 export default function About() {
+    const isMobile = window.innerWidth <= 768;
+
     return (
-        <div id="aboutMe" style={styles.container}>
-            <div style={styles.header}>
-                <img src={powerpuffMe} alt="me" style={styles.imageBounce} />
-                <h1 style={styles.h1}>ABOUT ME</h1>
+        <div id="aboutMe" style={isMobile ? {...styles.container, ...mobileStyles.container} : styles.container}>
+            <div style={isMobile ? {...styles.header, ...mobileStyles.header} : styles.header}>
+                <img src={powerpuffMe} alt="me" style={isMobile ? {...styles.imageBounce, ...mobileStyles.imageBounce} : styles.imageBounce} />
+                <h1 style={isMobile ? {...styles.h1, ...mobileStyles.h1} : styles.h1}>ABOUT ME</h1>
             </div>
-            <section style={styles.section}>
-                <img src={photoFrame} alt="Description" style={styles.imageFrame} />
-                <div style={styles.textContainer}>
+            <section style={isMobile ? {...styles.section, ...mobileStyles.section} : styles.section}>
+                <img src={photoFrame} alt="Description" style={isMobile ? {...styles.imageFrame, ...mobileStyles.imageFrame} : styles.imageFrame} />
+                <div style={isMobile ? {...styles.textContainer, ...mobileStyles.textContainer} : styles.textContainer}>
                     <InfoBlock img={heartIcon} label="LOCATION:" text="los angeles, california" />
                     <InfoBlock img={heartIcon} label="UNIVERSITY:" text="california state university, long beach" />
                     <InfoBlock img={heartIcon} label="DEGREE:" text="b.s. in computer science" />
